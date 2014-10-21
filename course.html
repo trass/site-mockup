@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TRASS - 1. Associated list functor</title>
+    <title>TRASS - Haskell</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -60,39 +60,52 @@
 
     <div class="container">
 
-      <ol class="breadcrumb">
-        <li><a href="course.html">Haskell</a></li>
-        <li><a href="sections/3.html">3. Funtors &amp; Monoids</a></li>
-        <li><a href="sections/homework.html">Homework</a></li>
-      </ol>
+      <h1>Haskell</h1>
+
+      <p class="lead">This course is about Haskell programming language.</p>
+
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Course sections</div>
+
+        <!-- List group -->
+        <ul class="nav nav-pills nav-stacked">
+          <li> <a href="sections/1.html">
+              <span class="badge alert-success pull-right"><i class="fa fa-check"></i></span>
+              1. Folding lists
+          </a> </li>
+          <li> <a href="sections/2.html">
+              <span class="badge alert-danger pull-right">1</span>
+              2. Foldable
+          </a> </li>
+          <li> <a href="sections/3.html">
+              <span class="badge pull-right">1</span>
+              3. Functors &amp; Monoids
+          </a> </li>
+          <li> <a href="sections/project.html">
+              Project
+          </a> </li>
+        </ul>
+
+      </div>
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">1. Associated list functor</h3>
+          <h3 class="panel-title">Overview</h3>
         </div>
         <div class="panel-body">
-          Напишите реализацию класса <code>Functor</code> для ассоциативного списка:
-          <br />
-          <br />
-          <pre> data AssocList k v = AssocList [(k, v)] deriving (Show) </pre>
+          Blah-blah-blah.
         </div>
       </div>
 
-      <form role="form">
-        <div class="form-group">
-          <label for="inputUploadSolution">Upload solution</label>
-          <input type="file" id="inputUploadSolution">
-          <p class="help-block">Solution should be a <code>.hs</code> file.</p>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Theory &amp; materials</h3>
         </div>
-        <div class="form-group">
-          <label for="inputSolution">Solution</label>
-          <textarea class="form-control" style='font-family: "Courier New", Courier, monospace' id="inputSolution">
-instance Functor ... where
-  fmap f ... = ...
-          </textarea>
+        <div class="panel-body">
+          Blah-blah-blah.
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      </div>
 
     </div><!-- /.container -->
 
