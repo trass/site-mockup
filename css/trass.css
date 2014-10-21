@@ -4,4 +4,6 @@ body {
   padding-bottom: 30px;
 }
 
-
+.hidden-row {
+    padding: 0 !important;
+}
