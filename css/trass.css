@@ -1,8 +1,7 @@
 body {
-  background-color: #f8f8f8;
+  background-color: #fdfdfd;
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
 
-.login-panel {
-  margin-top: 25%;
-}
 
