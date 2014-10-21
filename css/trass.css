@@ -7,3 +7,14 @@ body {
 .hidden-row {
     padding: 0 !important;
 }
+
+.label-void {
+  border: 1px solid #888;
+  color: #888;
+}
+.label-void[href]:hover,
+.label-void[href]:focus {
+  border: 1px solid #888;
+  color: #888;
+}
+
