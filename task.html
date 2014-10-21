@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TRASS - Sign In</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/trass.css" rel="stylesheet">
+
+    <!-- Social buttons CSS -->
+    <link href="css/plugins/social-buttons.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body role="document">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">TRASS</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Problems</a></li>
+            <li><a href="#">Submissions</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+            <li><p class="navbar-text">Signed in as <a href="#">fizruk</a> [<a href="login.html">logout</a>]</p></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <ol class="breadcrumb">
+        <li><a href="#">Haskell</a></li>
+        <li><a href="#">3. Funtors &amp; Monoids</a></li>
+        <li><a href="#">Homework</a></li>
+      </ol>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">1. Associated list functor</h3>
+        </div>
+        <div class="panel-body">
+          Напишите реализацию класса <code>Functor</code> для ассоциативного списка:
+          <br />
+          <br />
+          <pre> data AssocList k v = AssocList [(k, v)] deriving (Show) </pre>
+        </div>
+      </div>
+
+      <form role="form">
+        <div class="form-group">
+          <label for="inputUploadSolution">Upload solution</label>
+          <input type="file" id="inputUploadSolution">
+          <p class="help-block">Solution should be a <code>.hs</code> file.</p>
+        </div>
+        <div class="form-group">
+          <label for="inputSolution">Solution</label>
+          <textarea class="form-control" style='font-family: "Courier New", Courier, monospace' id="inputSolution">
+instance Functor ... where
+  fmap f ... = ...
+          </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div><!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
