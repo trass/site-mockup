@@ -21,6 +21,9 @@
     <!-- Custom Fonts -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <!-- CodeMirror StyleSheets -->
+    <link href="codemirror-4.7/lib/codemirror.css" rel="stylesheet" type="text/css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -121,6 +124,17 @@ instance Functor ... where
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- CodeMirror Core JavaScript -->
+    <script src="codemirror-4.7/lib/codemirror.js"></script>
+
+    <!-- CodeMirror Haskell mode -->
+    <script src="codemirror-4.7/mode/haskell/haskell.js"></script>
+
+    <script>
+      /* Set up CodeMirror */
+      var myCodeMirror = CodeMirror.fromTextArea(inputSolution);
+    </script>
 </body>
 
 </html>
