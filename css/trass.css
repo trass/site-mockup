@@ -8,6 +8,20 @@ body {
     padding: 0 !important;
 }
 
+.hidden-row > div {
+  padding: 10px;
+}
+
+.label-dark-void {
+  border: 1px solid #000;
+  color: #000;
+}
+.label-dark-void[href]:hover,
+.label-dark-void[href]:focus {
+  border: 1px solid #000;
+  color: #000;
+}
+
 .label-void {
   border: 1px solid #888;
   color: #888;
