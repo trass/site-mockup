@@ -85,45 +85,127 @@
 
     <div class="container">
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Recent updates</h3>
+      <div class="row">
+        <div class="col-sm-4">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Course points</h3>
+            </div>
+
+            <ul class="nav nav-pills nav-stacked">
+              <li> <a href="#">
+                  <span class="badge pull-right">6</span>
+                  Classwork
+              </a> </li>
+              <li> <a href="#">
+                  <span class="badge pull-right">21</span>
+                  Homework
+              </a> </li>
+              <li> <a href="#">
+                  <span class="badge pull-right">0</span>
+                  Project
+              </a> </li>
+              <li class="active"> <a href="#">
+                  <span class="badge pull-right">26</span>
+                  Total
+              </a> </li>
+            </ul>
+          </div>
+
         </div>
-          <table class="table table-condensed">
-            <thead>
-              <tr>
-                <th>Section</th>
-                <th>Activity</th>
-                <th>Score</th>
-                <th></th>
-            </thead>
-            <tbody>
-              <tr class="active">
-                <td><a href="sections/3.html">3. Functors &amp; Monoids</a></td>
-                <td>Accepted solution for <a href="task.html">2. Monoids</a></td>
-                <td><span class="label label-success">+10</span></td>
-                <td><span title="21 Oct 2014 19:42:34 GMT+4">&lt; minute ago</span</td>
-              </tr>
-              <tr class="active">
-                <td><a href="sections/3.html">3. Functors &amp; Monoids</a></td>
-                <td>Test</td>
-                <td><span class="label label-success">+5</span></td>
-                <td><span title="21 Oct 2014 19:42:34 GMT+4">3 hours ago</span</td>
-              </tr>
-              <tr>
-                <td><a href="sections/3.html">2. Foldable</a></td>
-                <td>Found teacher's mistake</td>
-                <td><span class="label label-success">+5</span></td>
-                <td><span title="21 Oct 2014 19:42:34 GMT+4">a week ago</span</td>
-              </tr>
-              <tr>
-                <td><a href="sections/3.html">1. Folding lists</a></td>
-                <td>Beautiful solution</td>
-                <td><span class="label label-success">+20</span></td>
-                <td><span title="21 Oct 2014 19:42:34 GMT+4">2 weeks ago</span</td>
-              </tr>
-            </tbody>
-          </table>
+
+        <div class="col-sm-8">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Updates</h3>
+            </div>
+              <table class="table table-condensed">
+                <tbody>
+                  <tr class="warning">
+                    <td><span class="label label-success">+10</span></td>
+                    <td>
+                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                        <small class="hidden-xs hidden-sm">a day ago</small>
+                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                      </span>
+                    </td>
+                    <td>
+                      <small>
+                        accepted solution for
+                        <a href="task.html">2. Monoids</a>
+                      </small>
+                    </td>
+                    <td><small><a href="sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                  </tr>
+                  <tr class="warning">
+                    <td><span class="label label-success">+5</span></td>
+                    <td>
+                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                        <small class="hidden-xs hidden-sm">a week ago</small>
+                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                      </span>
+                    </td>
+                    <td>
+                      <small>
+                        found teacher's mistake
+                      </small>
+                    </td>
+                    <td><small><a href="sections/3.html">2. Foldable</a></small></td>
+                  </tr>
+                  <tr>
+                    <td><span class="label label-success">+1</span></td>
+                    <td>
+                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                        <small class="hidden-xs hidden-sm">a week ago</small>
+                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                      </span>
+                    </td>
+                    <td>
+                      <small>
+                        class activity
+                      </small>
+                    </td>
+                    <td><small><a href="sections/3.html">2. Foldable</a></small></td>
+                  </tr>
+                  <tr>
+                    <td><span class="label label-success">+5</span></td>
+                    <td>
+                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                        <small class="hidden-xs hidden-sm">2 weeks ago</small>
+                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                      </span>
+                    </td>
+                    <td>
+                      <small>
+                        elegant solution for
+                        <a href="task.html">3. Left fold through the right</a>
+                      </small>
+                    </td>
+                    <td><small><a href="sections/3.html">1. Folding lists</a></small></td>
+                  </tr>
+                  <tr>
+                    <td><span class="label label-success">+5</span></td>
+                    <td>
+                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                        <small class="hidden-xs hidden-sm">2 weeks ago</small>
+                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                      </span>
+                    </td>
+                    <td>
+                      <small>
+                        accepted solution for
+                        <a href="task.html">3. Left fold through the right</a>
+                      </small>
+                    </td>
+                    <td><small><a href="sections/3.html">1. Folding lists</a></small></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+        </div>
       </div>
 
     </div><!-- /.container -->
