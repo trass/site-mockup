@@ -82,233 +82,240 @@
       </div>
     </div>
 
-    <!-- Add Score Modal -->
-    <div class="modal fade" id="addScore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Add Score</h4>
-          </div>
-          <div class="modal-body">
-            <form role="form">
-              <div class="form-group">
-                <label for="addScoreInputStudent">Student</label>
-                <input class="form-control" id="addScoreInputStudent" placeholder="Student">
-              </div>
-              <div class="form-group">
-                <label for="addScoreInputProblem">Problem</label>
-                <input class="form-control" id="addScoreInputProblem" placeholder="Problem">
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
     <div class="container">
 
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">Ratings</h3>
         </div>
-          <table class="table table-hover table-condensed">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th><span class="pull-right">Seminars</span></th>
-                <th><span class="pull-right">Homework</span></th>
-                <th><span class="pull-right">Project</span></th>
-                <th class="warning"><span class="pull-right">Total</span></th>
-              </tr>
-            </thead>
-            <tbody>
+        <table class="table table-hover table-condensed">
+          <thead>
+            <tr>
+              <th class="text-right">#</th>
+              <th>Student</th>
+              <th class="hidden-xs text-right"><span class="label label-success">Bonus</span></th>
+              <th class="hidden-xs text-right"><span class="label label-danger">Penalty</span></th>
+              <th class="hidden-xs text-right">Classwork</th>
+              <th class="hidden-xs text-right">Homework</th>
+              <th class="hidden-xs text-right">Project</th>
+              <th class="text-right warning">Total</th>
+            </tr>
+          </thead>
+          <tbody>
 
-              <tr data-toggle="modal" data-target="#addScore">
-                <td>1</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">160</span></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">150</span></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">140</span></td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">130</span></td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">120</span></td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">120</span></td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">100</span></td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">95</span></td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td><a href="student.html">Ivanov Ivan</a></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">40</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">80</span></td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">45</span></td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">38</span></td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">33</span></td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">30</span></td>
-              </tr>
-              <tr>
-                <td>14</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">24</span></td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">22</span></td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">22</span></td>
-              </tr>
-              <tr>
-                <td>17</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">19</span></td>
-              </tr>
-              <tr>
-                <td>18</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">17</span></td>
-              </tr>
-              <tr>
-                <td>19</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">5</span></td>
-              </tr>
-              <tr>
-                <td>19</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">5</span></td>
-              </tr>
-              <tr>
-                <td>19</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">5</span></td>
-              </tr>
-              <tr>
-                <td>22</td>
-                <td><a href="student.html">Petrov Petr</a></td>
-                <td><span class="label label-void pull-right">10</span></td>
-                <td><span class="label label-void pull-right">20</span></td>
-                <td><span class="label label-void pull-right">30</span></td>
-                <td class="warning"><span class="label label-dark-void pull-right">0</span></td>
-              </tr>
+            <tr>
+              <td class="text-right">1</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">2</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">3</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">4</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">5</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">6</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">7</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">8</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">9</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">10</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">11</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">12</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">13</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">14</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">15</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">16</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">17</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">18</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">19</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">20</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
+            <tr>
+              <td class="text-right">21</td>
+              <td><a href="student.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+              <td class="hidden-xs text-right"><span class="label label-success">+10</span></td>
+              <td class="hidden-xs text-right"><span class="label label-danger">-7</span></td>
+              <td class="hidden-xs text-right">10</td>
+              <td class="hidden-xs text-right">20</td>
+              <td class="hidden-xs text-right">30</td>
+              <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+            </tr>
 
-            </tbody>
-          </table>
+          </tbody>
+        </table>
       </div>
 
     </div><!-- /.container -->
