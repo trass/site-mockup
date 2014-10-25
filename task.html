@@ -111,25 +111,34 @@
         </div>
       </div>
 
-      <form role="form">
-        <div class="form-group">
-          <span class="btn btn-default btn-file">
-            <i class="fa fa-upload"></i> Upload solution
-            <input type="file" id="inputUploadSolution">
-          </span>
-          &nbsp;
-          <samp id="uploadedFileLabel"></samp>
-          <p class="help-block">Solution should be a <code>.hs</code> file.</p>
-        </div>
-        <div class="form-group">
-          <label for="inputSolution">Solution</label>
-          <textarea class="form-control" style='font-family: "Courier New", Courier, monospace' id="inputSolution">
-instance Functor ... where
-  fmap f ... = ...
-          </textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      <div class="visible-xs-block alert alert-info" role="alert">
+        <strong>Note!</strong>
+        Please use laptop or desktop computer to submit solutions!
+        <br/>
+        If you really want to submit from your phone, you can <a href="javascript:$('#submission-form').removeClass('hidden-xs')"><strong>try</strong></a>.
+      </div>
+
+      <div class="hidden-xs" id="submission-form">
+        <form role="form">
+          <div class="form-group">
+            <span class="btn btn-default btn-file">
+              <i class="fa fa-upload"></i> Upload solution
+              <input type="file" id="inputUploadSolution">
+            </span>
+            &nbsp;
+            <samp id="uploadedFileLabel"></samp>
+            <p class="help-block">Solution should be a <code>.hs</code> file.</p>
+          </div>
+          <div class="form-group">
+            <label for="inputSolution">Solution</label>
+            <textarea class="form-control" style='font-family: "Courier New", Courier, monospace' id="inputSolution">
+  instance Functor ... where
+    fmap f ... = ...
+            </textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
 
     </div><!-- /.container -->
 
