@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mr. Teacher - Settings</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/trass.css" rel="stylesheet">
+
+    <!-- Social buttons CSS -->
+    <link href="../css/plugins/social-buttons.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body role="document">
+
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Haskell programming</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="course.html" title="Course" data-placement="bottom">
+              <i class="fa fa-book fa-lg fa-fw"></i>
+              <span class="visible-xs-inline">Course</span>
+            </a></li>
+            <li><a href="submissions.html" title="Submissions" data-placement="bottom">
+              <i class="fa fa-inbox fa-lg fa-fw"></i>
+              <span class="label label-danger">2</span>
+              <span class="visible-xs-inline">Submissions<span>
+            </a></li>
+            <li><a href="ratings.html" title="Ratings" data-placement="bottom">
+              <i class="fa fa-users fa-lg fa-fw"></i>
+              <span class="visible-xs-inline">Ratings</span>
+            </a></li>
+            <li><a href="messages.html" title="Messages" data-placement="bottom">
+              <i class="fa fa-envelope fa-lg fa-fw"></i>
+              <span class="label label-danger">1</span>
+              <span class="visible-xs-inline">Messages</span>
+            </a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><p class="navbar-text">
+              <i class="fa fa-graduation-cap fa-lg fa-fw"></i> Mr. Teacher
+            </p></li>
+            <li><a href="settings.html" title="Settings" data-placement="bottom">
+              <i class="fa fa-gear fa-lg fa-fw"></i>
+              <span class="visible-xs-inline">Settings</span>
+            </a></li>
+            <li><a href="../login.html" title="Sign out" data-placement="bottom">
+              <i class="fa fa-sign-out fa-lg fa-fw"></i>
+              <span class="visible-xs-inline">Sign Out</span>
+            </a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-4 col-md-3">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <i class="fa fa-gear fa-lg fw"></i>
+                Settings
+              </h3>
+            </div>
+
+            <ul class="nav nav-pills nav-stacked" role="tablist" id="settingsPills">
+              <li class="active"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+              <li><a href="#account" role="tab" data-toggle="tab">Account</a></li>
+              <li><a href="#notifications" role="tab" data-toggle="tab">Notifications</a></li>
+              <li><a href="#courses" role="tab" data-toggle="tab">Courses</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-8 col-md-9">
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="profile">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Profile</h3>
+                </div>
+
+                <div class="panel-body">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="profileName">Name</label>
+                      <input type="fullname" class="form-control" id="profileName" value="Mr. Teacher" />
+                    </div>
+                    <div class="form-group">
+                      <label for="profileEmail">Email (will be public)</label>
+                      <input type="email" class="form-control" id="profileEmail" value="mr.teacher@example.com">
+                    </div>
+                    <button class="btn btn-success">Update profile</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="account">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Change password</h3>
+                </div>
+
+                <div class="panel-body">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="passwdOldPassword">Old password</label>
+                      <input type="password" class="form-control" id="passwdOldPassword" />
+                    </div>
+                    <div class="form-group">
+                      <label for="passwdNewPassword">New password</label>
+                      <input type="password" class="form-control" id="passwdNewPassword" />
+                    </div>
+                    <div class="form-group">
+                      <label for="passwdConfirmPassword">Confirm new password</label>
+                      <input type="password" class="form-control" id="passwdConfirmPassword" />
+                    </div>
+                    <button class="btn btn-default">Change password</button>
+                    &nbsp;
+                    <a href="../forgot-password.html">Forgot password?</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="notifications">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Notifications</h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="navbar navbar-inverse pull-right hidden-xs">
+                      <ul class="nav navbar-nav">
+                        <li><p class="navbar-text">
+                          <i class="fa fa-inbox fa-lg fa-fw"></i>
+                          <span class="label label-danger">1</span>
+                        </p></li>
+                      </ul>
+                    </div>
+                    <h5>Submissions</h5>
+                    <small>
+                      <p class="help-block">When a submission finished automatic job and asks for a review.</p>
+                      <label><input type="checkbox" checked> E-mail</label>
+                      &nbsp;&nbsp;&nbsp;
+                      <label><input type="checkbox"> Web</label>
+                    </small>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="navbar navbar-inverse pull-right hidden-xs">
+                      <ul class="nav navbar-nav">
+                        <li><p class="navbar-text">
+                          <i class="fa fa-envelope fa-lg fa-fw"></i>
+                          <span class="label label-danger">1</span>
+                        </p></li>
+                      </ul>
+                    </div>
+                    <h5>Messages</h5>
+                    <small>
+                      <p class="help-block">When a student sends a message to the system.</p>
+                      <label><input type="checkbox" checked> E-mail</label>
+                      &nbsp;&nbsp;&nbsp;
+                      <label><input type="checkbox"> Web</label>
+                    </small>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Notification e-mail</h3>
+                </div>
+
+                <div class="panel-body">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="notificationEmail">Primary email (only used for email notifications)</label>
+                      <input type="email" class="form-control" id="notificationEmail" value="mr.teacher@example.com">
+                    </div>
+                    <button class="btn btn-success">Save</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="courses">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Courses maintainership</h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                  <a href="#" class="btn btn-xs btn-default pull-right">Leave</a>
+                    <a href="course.html">Haskell programming</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Courses studentship</h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                  <a href="#" class="btn btn-xs btn-default pull-right">Leave</a>
+                    <a href="../index.html">D programming</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div><!-- /.container -->
+
+    <div class="container text-center">
+      <hr />
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav nav-pills nav-justified">
+                    <li><p>© 2014 Nickolay Kudasov.</p></li>
+                    <li><a href="../about.html">About TRASS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="../js/jquery-1.11.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script type="text/javascript">
+      /* Initialize tooltips */
+      $(function () {
+          $("table *").tooltip();
+          $(".nav a").tooltip();
+      });
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56096186-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
