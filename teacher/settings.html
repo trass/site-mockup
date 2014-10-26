@@ -90,7 +90,7 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">
-                <i class="fa fa-gear fa-lg fw"></i>
+                <i class="fa fa-gear fa-lg fa-fw"></i>
                 Settings
               </h3>
             </div>
@@ -100,8 +100,8 @@
               <li><a href="#account" role="tab" data-toggle="tab">Account</a></li>
               <li><a href="#notifications" role="tab" data-toggle="tab">Notifications</a></li>
               <li><a href="#courses" role="tab" data-toggle="tab">Courses</a></li>
+              <li><a href="#course-haskell" role="tab" data-toggle="tab"><i class="fa fa-book fa-lg fa-fw"></i> Haskell programming</a></li>
             </ul>
-
           </div>
 
         </div>
@@ -233,18 +233,23 @@
                   </li>
                 </ul>
               </div>
+            </div>
 
+            <div class="tab-pane" id="course-haskell">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Courses studentship</h3>
+                  <h3 class="panel-title">Course repository</h3>
                 </div>
 
-                <ul class="list-group">
-                  <li class="list-group-item">
-                  <a href="#" class="btn btn-xs btn-default pull-right">Leave</a>
-                    <a href="../index.html">D programming</a>
-                  </li>
-                </ul>
+                <div class="panel-body">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="courseHaskellRepoURL">Course repository URL</label>
+                      <input type="fullname" class="form-control" id="courseHaskellRepoURL" value="https://fizruk@bitbucket.org/fizruk/haskell-2015.git" />
+                    </div>
+                    <a class="btn btn-success">Update course</a>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
