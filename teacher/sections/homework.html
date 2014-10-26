@@ -35,7 +35,7 @@
 
 <body role="document">
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,20 +48,20 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../course.html" title="Course">
+            <li><a href="../course.html" title="Course" data-placement="bottom">
               <i class="fa fa-book fa-lg fa-fw"></i>
               <span class="visible-xs-inline">Course</span>
             </a></li>
-            <li><a href="../submissions.html" title="Submissions">
+            <li><a href="../submissions.html" title="Submissions" data-placement="bottom">
               <i class="fa fa-inbox fa-lg fa-fw"></i>
               <span class="label label-danger">2</span>
               <span class="visible-xs-inline">Submissions<span>
             </a></li>
-            <li><a href="../ratings.html" title="Ratings">
+            <li><a href="../ratings.html" title="Ratings" data-placement="bottom">
               <i class="fa fa-users fa-lg fa-fw"></i>
               <span class="visible-xs-inline">Ratings</span>
             </a></li>
-            <li><a href="../messages.html" title="Messages">
+            <li><a href="../messages.html" title="Messages" data-placement="bottom">
               <i class="fa fa-envelope fa-lg fa-fw"></i>
               <span class="label label-danger">1</span>
               <span class="visible-xs-inline">Messages</span>
@@ -69,14 +69,14 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../profile.html" title="Profile">
+            <li><a href="../profile.html" title="Profile" data-placement="bottom">
               <i class="fa fa-user fa-lg fa-fw"></i> Mr. Teacher
             </a></li>
-            <li><a href="../settings.html" title="Settings">
+            <li><a href="../settings.html" title="Settings" data-placement="bottom">
               <i class="fa fa-gear fa-lg fa-fw"></i>
               <span class="visible-xs-inline">Settings</span>
             </a></li>
-            <li><a href="../../login.html" title="Sign out">
+            <li><a href="../../login.html" title="Sign out" data-placement="bottom">
               <i class="fa fa-sign-out fa-lg fa-fw"></i>
               <span class="visible-xs-inline">Sign Out</span>
             </a></li>
@@ -191,6 +191,7 @@
       /* Initialize tooltips */
       $(function () {
           $("table *").tooltip();
+          $(".nav a").tooltip();
       });
 
       $('.datepicker').datepicker({ format: "dd M yyyy" });
