@@ -94,50 +94,148 @@
         <li><a href="sections/homework.html">Homework</a></li>
       </ol>
 
-      <ul class="pager">
-        <li class="previous disabled"><a href="task.html">&larr; Previous <span class="hidden-xs">Problem</span></a></li>
-        <li class="next"><a href="task.html">Next <span class="hidden-xs">Problem: 2. Monoids</span> &rarr;</a></li>
-      </ul>
+      <div class="row">
+        <div class="col-sm-9">
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">1. Associated list functor</h3>
-        </div>
-        <div class="panel-body">
-          Напишите реализацию класса <code>Functor</code> для ассоциативного списка:
-          <br />
-          <br />
-          <pre> data AssocList k v = AssocList [(k, v)] deriving (Show) </pre>
-        </div>
-      </div>
-
-      <div class="visible-xs-block alert alert-info" role="alert">
-        <strong>Note!</strong>
-        Please use laptop or desktop computer to submit solutions!
-        <br/>
-        If you really want to submit from your phone, you can <a href="javascript:$('#submission-form').removeClass('hidden-xs')"><strong>try</strong></a>.
-      </div>
-
-      <div class="hidden-xs" id="submission-form">
-        <form role="form">
-          <div class="form-group">
-            <span class="btn btn-default btn-file">
-              <i class="fa fa-upload"></i> Upload solution
-              <input type="file" id="inputUploadSolution">
-            </span>
-            &nbsp;
-            <samp id="uploadedFileLabel"></samp>
-            <p class="help-block">Solution should be a <code>.hs</code> file.</p>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">1. Associated list functor</h3>
+            </div>
+            <div class="panel-body">
+              Напишите реализацию класса <code>Functor</code> для ассоциативного списка:
+              <br />
+              <br />
+              <pre> data AssocList k v = AssocList [(k, v)] deriving (Show) </pre>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="inputSolution">Solution</label>
-            <textarea class="form-control" style='font-family: "Courier New", Courier, monospace' id="inputSolution">
-  instance Functor ... where
-    fmap f ... = ...
-            </textarea>
+
+          <ul class="pager">
+            <li class="previous disabled"><a href="task.html">&larr; Previous <span class="hidden-xs">Problem</span></a></li>
+            <li class="next"><a href="task.html">Next <span class="hidden-xs">Problem: 2. Monoids</span> &rarr;</a></li>
+          </ul>
+
+          <div class="visible-xs-block alert alert-info" role="alert">
+            <strong>Note!</strong>
+            Please use laptop or desktop computer to submit solutions!
+            <br/>
+            If you really want to submit from your phone, you can <a href="javascript:$('#submission-form').removeClass('hidden-xs')"><strong>try</strong></a>.
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+
+          <div class="hidden-xs" id="submission-form">
+            <form role="form">
+              <div class="form-group">
+                <span class="btn btn-default btn-file">
+                  <i class="fa fa-upload"></i> Upload solution
+                  <input type="file" id="inputUploadSolution">
+                </span>
+                &nbsp;
+                <samp id="uploadedFileLabel"></samp>
+                <p class="help-block">Solution should be a <code>.hs</code> file.</p>
+              </div>
+              <div class="form-group">
+                <label for="inputSolution">Solution</label>
+                <textarea class="form-control" style='font-family: "Courier New", Courier, monospace' id="inputSolution">
+      instance Functor ... where
+        fmap f ... = ...
+                </textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Submissions</h3>
+            </div>
+            <div class="list-group">
+              <a href="submissions/1.html" class="list-group-item">
+                <span class="pull-right">
+                  <span class="label label-success">accepted</span>
+                </span>
+                <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                  <small class="hidden-sm">a day ago</small>
+                  <i class="visible-sm-inline fa fa-clock-o"></i>
+                </span>
+              </a>
+              <a href="submissions/1.html" class="list-group-item">
+                <span class="pull-right">
+                  <span class="label label-default">submitted</span>
+                </span>
+                <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                  <small class="hidden-sm">a day ago</small>
+                  <i class="visible-sm-inline fa fa-clock-o"></i>
+                </span>
+              </a>
+              <a href="submissions/1.html" class="list-group-item">
+                <span class="pull-right">
+                  <span class="label label-info">in review</span>
+                </span>
+                <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                  <small class="hidden-sm">2 days ago</small>
+                  <i class="visible-sm-inline fa fa-clock-o"></i>
+                </span>
+              </a>
+              <a href="submissions/1.html" class="list-group-item">
+                <span class="pull-right">
+                  <span class="label label-danger">rejected</span>
+                </span>
+                <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                  <small class="hidden-sm">a week ago</small>
+                  <i class="visible-sm-inline fa fa-clock-o"></i>
+                </span>
+              </a>
+              <a href="submissions/1.html" class="list-group-item">
+                <span class="pull-right">
+                  <span class="label label-warning">passed tests</span>
+                </span>
+                <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                  <small class="hidden-sm">a week ago</small>
+                  <i class="visible-sm-inline fa fa-clock-o"></i>
+                </span>
+              </a>
+              <a href="submissions/1.html" class="list-group-item">
+                <span class="pull-right">
+                  <span class="label label-default">errored</span>
+                </span>
+                <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                  <small class="hidden-sm">a week ago</small>
+                  <i class="visible-sm-inline fa fa-clock-o"></i>
+                </span>
+              </a>
+              <a href="submissions/1.html" class="list-group-item">
+                <span class="pull-right">
+                  <span class="label label-danger">failed tests</span>
+                </span>
+                <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                  <small class="hidden-sm">a week ago</small>
+                  <i class="visible-sm-inline fa fa-clock-o"></i>
+                </span>
+              </a>
+              <a href="submissions/1.html" class="list-group-item">
+                <span class="pull-right">
+                  <span class="label label-danger">compilation error</span>
+                </span>
+                <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                  <small class="hidden-sm">a month ago</small>
+                  <i class="visible-sm-inline fa fa-clock-o"></i>
+                </span>
+              </a>
+              <a href="submissions/1.html" class="list-group-item">
+                <span class="pull-right">
+                  <span class="label label-danger">invalid</span>
+                </span>
+                <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                  <small class="hidden-sm">3 months ago</small>
+                  <i class="visible-sm-inline fa fa-clock-o"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
 
     </div><!-- /.container -->
@@ -168,6 +266,13 @@
 
     <!-- CodeMirror Haskell mode -->
     <script src="codemirror-4.7/mode/haskell/haskell.js"></script>
+
+    <script type="text/javascript">
+      /* Initialize tooltips */
+      $(function () {
+          $(".text-help").tooltip();
+      });
+    </script>
 
     <script>
       /* Set up CodeMirror */
