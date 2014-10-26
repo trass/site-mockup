@@ -3,6 +3,10 @@ body {
   padding-bottom: 30px;
 }
 
+body.login {
+  padding-top: 70px;
+}
+
 .tooltip {
   white-space: nowrap;
 }
