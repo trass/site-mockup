@@ -151,7 +151,7 @@
                       <label for="passwdConfirmPassword">Confirm new password</label>
                       <input type="password" class="form-control" id="passwdConfirmPassword" />
                     </div>
-                    <button class="btn btn-default">Change password</button>
+                    <button class="btn btn-primary">Change password</button>
                     &nbsp;
                     <a href="../forgot-password.html">Forgot password?</a>
                   </form>
@@ -167,35 +167,39 @@
 
                 <ul class="list-group">
                   <li class="list-group-item">
-                    <div class="navbar navbar-inverse pull-right hidden-xs">
-                      <ul class="nav navbar-nav">
-                        <li><p class="navbar-text">
-                          <i class="fa fa-inbox fa-lg fa-fw"></i>
-                          <span class="label label-danger">1</span>
-                        </p></li>
-                      </ul>
-                    </div>
-                    <h5>Submissions</h5>
+                    <h5>
+                      <div class="navbar navbar-inverse pull-right hidden-xs">
+                        <ul class="nav navbar-nav">
+                          <li><p class="navbar-text">
+                            <i class="fa fa-inbox fa-lg fa-fw"></i>
+                            <span class="label label-danger">1</span>
+                          </p></li>
+                        </ul>
+                      </div>
+                      Submissions
+                    </h5>
                     <small>
                       <p class="help-block">When a submission finished automatic job and asks for a review.</p>
-                      <label><input type="checkbox" checked> E-mail</label>
+                      <label><input type="checkbox" checked> Email</label>
                       &nbsp;&nbsp;&nbsp;
                       <label><input type="checkbox"> Web</label>
                     </small>
                   </li>
                   <li class="list-group-item">
-                    <div class="navbar navbar-inverse pull-right hidden-xs">
-                      <ul class="nav navbar-nav">
-                        <li><p class="navbar-text">
-                          <i class="fa fa-envelope fa-lg fa-fw"></i>
-                          <span class="label label-danger">1</span>
-                        </p></li>
-                      </ul>
-                    </div>
-                    <h5>Messages</h5>
+                    <h5>
+                      <div class="navbar navbar-inverse pull-right hidden-xs">
+                        <ul class="nav navbar-nav">
+                          <li><p class="navbar-text">
+                            <i class="fa fa-envelope fa-lg fa-fw"></i>
+                            <span class="label label-danger">1</span>
+                          </p></li>
+                        </ul>
+                      </div>
+                      Messages
+                    </h5>
                     <small>
                       <p class="help-block">When a student sends a message to the system.</p>
-                      <label><input type="checkbox" checked> E-mail</label>
+                      <label><input type="checkbox" checked> Email</label>
                       &nbsp;&nbsp;&nbsp;
                       <label><input type="checkbox"> Web</label>
                     </small>
@@ -205,7 +209,7 @@
 
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Notification e-mail</h3>
+                  <h3 class="panel-title">Notification email</h3>
                 </div>
 
                 <div class="panel-body">
@@ -214,7 +218,7 @@
                       <label for="notificationEmail">Primary email (only used for email notifications)</label>
                       <input type="email" class="form-control" id="notificationEmail" value="mr.teacher@example.com">
                     </div>
-                    <button class="btn btn-success">Save</button>
+                    <button class="btn btn-success">Update primary email</button>
                   </form>
                 </div>
               </div>
@@ -228,14 +232,60 @@
 
                 <ul class="list-group">
                   <li class="list-group-item">
-                  <a href="#" class="btn btn-xs btn-default pull-right">Leave</a>
+                    <a href="#" class="btn btn-xs btn-default pull-right">Leave</a>
                     <a href="course.html">Haskell programming</a>
                   </li>
                 </ul>
               </div>
+
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Start a new course</h3>
+                </div>
+
+                <div class="panel-body">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="newCourseIdent">Course identifier</label>
+                      <input class="form-control" id="newCourseIdent" />
+                    </div>
+                    <div class="form-group">
+                      <label for="newCourseHaskellRepoURL">Course repository URL</label>
+                      <input class="form-control" id="newCourseHaskellRepoURL" placeholder="https://" />
+                    </div>
+                    <a href="#" class="btn btn-success"><i class="fa fa-rocket fa-lg fa-fw"></i> Start course</a>
+                  </form>
+                </div>
+              </div>
             </div>
 
             <div class="tab-pane" id="course-haskell">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Assistants</h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#" class="btn btn-xs btn-danger pull-right"><i class="fa fa-trash fa-fw"></i> Remove</a>
+                    <a href="../teacher.html"><i class="fa fa-graduation-cap fa-lg fa-fw"></i> John Smith</a>
+                  </li>
+                </ul>
+
+                <div class="panel-footer">
+                  <form role="form">
+                    <div class="form-group">
+                      <div class="input-group input-group-sm">
+                        <input class="form-control" id="inviteAssistant" placeholder="Type assistant name" />
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button">Invite</button>
+                        </span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h3 class="panel-title">Course repository</h3>
@@ -244,12 +294,39 @@
                 <div class="panel-body">
                   <form role="form">
                     <div class="form-group">
-                      <label for="courseHaskellRepoURL">Course repository URL</label>
-                      <input type="fullname" class="form-control" id="courseHaskellRepoURL" value="https://fizruk@bitbucket.org/fizruk/haskell-2015.git" />
+                      <label for="courseHaskellIdent">Course identifier</label>
+                      <div class="input-group">
+                        <input class="form-control" id="courseHaskellIdent" value="haskell-2015" />
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button">Rename</button>
+                        </span>
+                      </div>
                     </div>
-                    <a class="btn btn-success">Update course</a>
+                    <div class="form-group">
+                      <label for="courseHaskellRepoURL">Course repository URL</label>
+                      <input class="form-control" id="courseHaskellRepoURL" value="https://fizruk@bitbucket.org/fizruk/haskell-2015.git" />
+                    </div>
+                    <a href="#" class="btn btn-success">Update course</a>
                   </form>
                 </div>
+              </div>
+
+              <div class="panel panel-danger">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Danger Zone</h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <h5>
+                      <a href="#" class="btn btn-danger pull-right"><i class="fa fa-trash fa-lg fa-fw"></i> Delete</a>
+                      Delete course
+                    </h5>
+                    <small class="help-block">
+                      Once you delete a course, there is no going back. Please be certain.
+                    </small>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
