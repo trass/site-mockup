@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Haskell - messages</title>
+    <title>Teacher - Mr. Teacher</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -59,7 +59,7 @@
               <span class="label label-success">+15</span>
               <span class="visible-xs-inline">Results</span>
             </a></li>
-            <li class="active"><a href="messages.html" title="Messages" data-placement="bottom">
+            <li><a href="messages.html" title="Messages" data-placement="bottom">
               <i class="fa fa-envelope fa-lg fa-fw"></i>
               <span class="label label-danger">1</span>
               <span class="visible-xs-inline">Messages</span>
@@ -86,42 +86,65 @@
     <div class="container">
 
       <div class="row">
-        <form role="form">
-          <div class="form-group col-md-9">
-            <textarea class="form-control" id="inputMessage"></textarea>
-          </div>
-          <div class="col-md-3">
-            <button type="submit" class="btn btn-primary btn-block">Send</button>
-          </div>
-        </form>
-      </div>
+        <div class="col-sm-4">
 
-      &nbsp;
+          <div class="panel panel-default">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-info">
+                <h3>
+                  <i class="fa fa-graduation-cap fa-lg fa-fw"></i>
+                  Mr. Teacher
+                  <small>PhD</small>
+                </h3>
+              </li>
+              <li class="list-group-item">
+                <a href="mailto:mr.teacher@example.com" class="pull-right">mr.teacher@example.com</a>
+                Email:
+              </li>
+            </ul>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Latest messages</h3>
-        </div>
-        <div class="panel-body">
-          <div class="media bg-warning">
-            <a class="pull-left" href="#">
-              <i class="media-object fa fa-graduation-cap fa-3x fa-fw"></i>
-            </a>
-            <div class="media-body">
-              <h5 class="media-heading"><a href="teacher.html">Mr. Teacher</a> <small>wrote a minute ago</small></h5>
-              Hey there! What's your problem?
+            <div class="list-group">
+              <a href="#" class="list-group-item">
+                <i class="fa fa-envelope fa-lg fa-fw"></i>
+                Send a message
+              </a>
             </div>
           </div>
-          <div class="media">
-            <i class="media-object pull-left fa fa-user fa-3x fa-fw"></i>
-            <div class="media-body">
-              <h5 class="media-heading">Ivanov Ivan <small>wrote 10 minutes ago</small></h5>
-              Hello! I have a problem with assignment #3.
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Completed courses</h3>
             </div>
+
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="index.html">Haskell programming</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
 
+        <div class="col-sm-8">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Active courses</h3>
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" class="btn btn-xs btn-default pull-right">&nbsp; Leave &nbsp;</a>
+                <a href="index.html">Haskell programming</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" class="btn btn-xs btn-success pull-right">&nbsp; Join &nbsp;</a>
+                <a href="index.html">Concurrent Haskell</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
 
     </div><!-- /.container -->
 
@@ -131,7 +154,7 @@
             <div class="col-lg-12">
                 <ul class="nav nav-pills nav-justified">
                     <li><p>© 2014 Nickolay Kudasov.</p></li>
-                    <li><a href="about.html">About TRASS</a></li>
+                    <li><a href="../about.html">About TRASS</a></li>
                 </ul>
             </div>
         </div>
@@ -146,9 +169,10 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
-    <script>
+    <script type="text/javascript">
       /* Initialize tooltips */
       $(function () {
+          $("table *").tooltip();
           $(".nav a").tooltip();
       });
     </script>
