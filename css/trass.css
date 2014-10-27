@@ -7,6 +7,95 @@ body.login {
   padding-top: 70px;
 }
 
+.trophy-gold:before {
+  color: #FFD700;
+
+  /* .fa-trophy */
+  content: "\f091";
+
+  /* .fa */
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+
+  /* .fa-lg */
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align:-15%;
+
+  /* .fa-fw */
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.trophy-silver:before {
+  color: #C0C0C0;
+
+  /* .fa-trophy */
+  content: "\f091";
+
+  /* .fa */
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+
+  /* .fa-lg */
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align:-15%;
+
+  /* .fa-fw */
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.trophy-bronze:before {
+  color: #CD7F32;
+
+  /* .fa-trophy */
+  content: "\f091";
+
+  /* .fa */
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+
+  /* .fa-lg */
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align:-15%;
+
+  /* .fa-fw */
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.trophy {
+  display: inline-block;
+  min-width: 10px;
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #222;
+  border-radius: 5px;
+}
+
 .tooltip {
   white-space: nowrap;
 }
