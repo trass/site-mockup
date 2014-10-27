@@ -7,6 +7,35 @@ body.login {
   padding-top: 70px;
 }
 
+.trophy-secret:before {
+  color: #BB00EE;
+
+  /* .fa-trophy */
+  content: "\f091";
+
+  /* .fa */
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+
+  /* .fa-lg */
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align:-15%;
+
+  /* .fa-fw */
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.trophy-secret {
+  background: #280050 !important;
+}
+
 .trophy-gold:before {
   color: #FFD700;
 
