@@ -96,7 +96,7 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-md-8">
 
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -109,9 +109,13 @@
                   <td><span class="trophy trophy-bronze"> <tt>Hello World!</tt> </span></td>
                   <td>Submit first solution.</td>
                 </tr>
-                <tr>
+                <tr style="border-bottom: 2px;">
                   <td><span class="trophy trophy-bronze"> Acceptable </span></td>
                   <td>Submit first <span class="label label-success">accepted</span> solution.</td>
+                </tr>
+                <tr style="border-bottom: 2px;">
+                  <td><span class="trophy trophy-bronze"> Bugfix </span></td>
+                  <td>Get <span class="label label-success">accepted</span> after failed attempt for the first time.</td>
                 </tr>
                 <tr>
                   <td><span class="trophy trophy-bronze"> Upstairs </span></td>
@@ -132,11 +136,11 @@
                 </tr>
                 <tr>
                   <td><span class="trophy trophy-silver"> Rattlemouth </span></td>
-                  <td>Send 100 messages.</td>
+                  <td>Send 50 messages.</td>
                 </tr>
                 <tr>
                   <td><span class="trophy trophy-silver"> Spam-bot </span></td>
-                  <td>Send 500 messages.</td>
+                  <td>Send 200 messages.</td>
                 </tr>
               </thead>
             </table>
@@ -161,13 +165,13 @@
                   <td><span class="trophy trophy-bronze"> The 15 min Rule </span></td>
                   <td>Submit a solution less than 15 minutes after deadline and get <span class="label label-success">accepted</span>.</td>
                 </tr>
-                <tr>
+                <tr class="active">
                   <td><span class="trophy trophy-bronze"> What Deadline? </span></td>
-                  <td>Submit a solution for the first time less than an hour before deadline and get <span class="label label-success">accepted</span>.</td>
+                  <td>Submit a solution for the first time less than an hour before deadline and get <span class="label label-success">accepted</span> before the deadline.</td>
                 </tr>
-                <tr>
+                <tr class="active">
                   <td><span class="trophy trophy-silver"> I Take the Risk </span></td>
-                  <td>Submit a solution for the first time less than 10 minutes before deadline and get <span class="label label-success">accepted</span>.</td>
+                  <td>Submit a solution for the first time less than 10 minutes before deadline and get <span class="label label-success">accepted</span> before the deadline.</td>
                 </tr>
                 <tr>
                   <td><span class="trophy trophy-silver"> I Have My Principles! </span></td>
@@ -234,10 +238,14 @@
                   <td>Get falsily accused of plagiarism for an <span class="label label-success">accepted</span> solution.</td>
                 </tr>
                 <tr>
+                  <td><span class="trophy trophy-bronze"> Sixth sense </span></td>
+                  <td>Submit a correct solution before the incorrect one gets evaluated.</td>
+                </tr>
+                <tr>
                   <td><span class="trophy trophy-bronze"> Old school </span></td>
                   <td>Solve a problem on paper and get <span class="label label-success">accepted</span>.</td>
                 </tr>
-                <tr>
+                <tr style="border-bottom: 0px;">
                   <td><span class="trophy trophy-bronze"> In the Bull's Eye </span></td>
                   <td>Get <span class="label label-success">accepted</span> with a single attempt.</td>
                 </tr>
@@ -267,11 +275,61 @@
                 </tr>
                 <tr>
                   <td><span class="trophy trophy-gold"> Perfectionist </span></td>
-                  <td>Get <span class="label label-success">accepted</span> with a single attempt for all course problems.</td>
+                  <td>Get <span class="label label-success">accepted</span> with a single attempt for all homework problems.</td>
                 </tr>
                 <tr>
                   <td><span class="trophy trophy-gold"> Fastest Gun in the West </span></td>
                   <td>Get <span class="label label-success">accepted</span> with a single attempt 4 times in a row within one hour.</td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Haskell programming</h3>
+            </div>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <td><span class="trophy trophy-bronze"> Origami Master </span></td>
+                  <td>Solve all problems in sections <a href="sections/3.html">1. Folding lists</a> and <a href="section/3.html">2. Foldable</a>.</td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Secret achievements — description is hidden from students</h3>
+            </div>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <td><span class="trophy trophy-secret"> Ninja </span></td>
+                  <td>Solve all homework problems without ever being seen by the teacher.</td>
+                </tr>
+                <tr>
+                  <td><span class="trophy trophy-secret"> I'm Here for Knowledge </span></td>
+                  <td>Solve all homework problems for 0 points total.</td>
+                </tr>
+                <tr>
+                  <td><span class="trophy trophy-secret"> Stone </span></td>
+                  <td>Don't do anything for 6 weeks.</td>
+                </tr>
+                <tr>
+                  <td><span class="trophy trophy-secret"> Jeweller </span></td>
+                  <td>Get <span class="label label-success">accepted</span> for a solution sent from a mobile phone.</td>
+                </tr>
+                <tr>
+                  <td><span class="trophy trophy-secret"> Multitasking </span></td>
+                  <td>Get <span class="label label-success">accepted</span> for a solution sent from the class.</td>
+                </tr>
+                <tr>
+                  <td><span class="trophy trophy-secret"> Photographer </span></td>
+                  <td>Send a photo of a solution through the submission system.</td>
                 </tr>
               </thead>
             </table>
