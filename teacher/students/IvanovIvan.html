@@ -105,11 +105,11 @@
             <ul class="nav nav-pills nav-stacked" role="tablist">
               <li><a class="text-center" href="#tabAchievements" role="tab" data-toggle="tab">
                 <span class="trophy">
-                  <span class="trophy-gold"> 1 </span>
-                  <span class="trophy-silver"> 3 </span>
-                  <span class="trophy-bronze"> 12 </span>
+                  <span class="trophy-gold" title="Gold Achievement"> 1 </span>
+                  <span class="trophy-silver" title="Silver Achievement"> 3 </span>
+                  <span class="trophy-bronze" title="Bronze Achievement"> 12 </span>
                 </span>
-                <span class="trophy trophy-secret"> 1 </span>
+                <span class="trophy trophy-secret" title="Secret Achievement"> 1 </span>
               </a></li>
               <li class="active"><a href="#tabPoints" role="tab" data-toggle="tab">
                 <span class="badge pull-right">27</span>
@@ -459,7 +459,7 @@
                       </td>
                     </tr>
                     <tr class="warning">
-                      <td class="text-center"><span class="trophy trophy-silver"></span></td>
+                      <td class="text-center"><span class="trophy trophy-silver" title="Silver Achievement"></span></td>
                       <td>
                         <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
                           <small class="hidden-xs hidden-sm">a week ago</small>
@@ -510,7 +510,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="text-center"><span class="trophy trophy-gold"></span></td>
+                      <td class="text-center"><span class="trophy trophy-gold" title="Gold Achievement"></span></td>
                       <td>
                         <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
                           <small class="hidden-xs hidden-sm">2 weeks ago</small>
@@ -744,30 +744,31 @@
                 <div class="panel-heading">
                   <h3 class="panel-title">Achievements</h3>
                 </div>
+
                 <div class="panel-body">
                   <div class="row">
-                    <p class="col-sm-6"><span class="trophy trophy-gold"> Triumph of Justice </span></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-gold" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Get <span class=&quot;label label-danger&quot;>rejected</span> and then get <span class=&quot;label label-success&quot;>accepted</span> for the same submission."> Triumph of Justice </button></p>
                   </div>
 
                   <div class="row">
-                    <p class="col-sm-6"><span class="trophy trophy-silver"> Productive Insomnia </span></p>
-                    <p class="col-sm-6"><span class="trophy trophy-silver"> Strike </span> <span class="text-help"> &times; 2</span></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-silver" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Find teacher's mistake."> Something's Not Right </button></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-silver" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Solve a whole homework before the deadline."> Strike </button> <span class="text-help"> &times; 2</span></p>
                   </div>
 
                   <div class="row">
-                    <p class="col-sm-6"><span class="trophy trophy-bronze"> <tt>Hello world!</tt> </span></p>
-                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Acceptable </span></p>
-                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Bugfix </span></p>
-                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Upstairs </span></p>
-                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Volunteer </span> <span class="text-help"> &times; 2</span></p> 
-                    <p class="col-sm-6"><span class="trophy trophy-bronze"> The 15 min Rule </span></p>
-                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Lucky 3 </span></p>
-                    <p class="col-sm-6"><span class="trophy trophy-bronze"> In the Bull's Eye </span> <span class="text-help"> &times; 3</span></p>
-                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Double Hit </span></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-bronze" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Submit first solution."> <tt>Hello world!</tt> </button></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-bronze" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Submit first <span class=&quot;label label-success&quot;>accepted</span> solution."> Acceptable </button></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-bronze" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Get <span class=&quot;label label-success&quot;>accepted</span> after failed attempt for the first time."> Bugfix </button></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-bronze" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Get in top 10 in rating."> Upstairs </button></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-bronze" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Solve a problem in class."> Volunteer </button> <span class="text-help"> &times; 2</span></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-bronze" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Submit a solution less than 15 minutes after deadline and get <span class=&quot;label label-success&quot;>accepted</span>."> The 15 min Rule </button></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-bronze" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Get <span class=&quot;label label-success&quot;>accepted</span> after 2 failed attempts."> Lucky 3 </button></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-bronze" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Get <span class=&quot;label label-success&quot;>accepted</span> with a single attempt."> In the Bull's Eye </button> <span class="text-help"> &times; 3</span></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-bronze" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Get <span class=&quot;label label-success&quot;>accepted</span> with a single attempt 2 times in a row."> Double Hit </button></p>
                   </div>
 
                   <div class="row">
-                    <p class="col-sm-6"><span class="trophy trophy-secret"> Jeweller </span></p>
+                    <p class="col-lg-4 col-md-6"><button class="btn btn-trophy trophy-secret" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Get <span class=&quot;label label-success&quot;>accepted</span> for a solution sent from a mobile phone."> Jeweller </button></p>
                   </div>
                 </div>
 
@@ -817,6 +818,9 @@
       $(function () {
           $("table *").tooltip();
           $(".nav a").tooltip();
+          $(".trophy *").tooltip();
+          $(".trophy").tooltip();
+          $(".btn-trophy").popover({"html": true});
       });
     </script>
 
