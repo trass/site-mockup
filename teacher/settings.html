@@ -250,8 +250,8 @@
                       <input class="form-control" id="newCourseIdent" />
                     </div>
                     <div class="form-group">
-                      <label for="newCourseHaskellRepoURL">Course repository URL</label>
-                      <input class="form-control" id="newCourseHaskellRepoURL" placeholder="https://" />
+                      <label for="newCourseRepoURL">Course repository URL</label>
+                      <input class="form-control" id="newCourseRepoURL" placeholder="https://" />
                     </div>
                     <a href="#" class="btn btn-success"><i class="fa fa-rocket fa-lg fa-fw"></i> Start course</a>
                   </form>
@@ -387,6 +387,64 @@
 
                   <a href="#" class="btn btn-success"><i class="fa fa-envelope fa-fw"></i> Invite Student</a>
                 </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Gamification</h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <h5>
+                      <div class="navbar navbar-inverse pull-right hidden-xs">
+                        <ul class="nav navbar-nav">
+                          <li><p class="navbar-text">
+                            <span class="label label-success">+ 25</span>
+                          </p></li>
+                        </ul>
+                      </div>
+                      Course Points
+                    </h5>
+                    <small>
+                      <p class="help-block">
+                        Course points indicate student progress in a single number.
+                        Points are typically rewarded for direct course mastering such as task completion.
+                        The final grade for the course is commonly based on course points.
+                      </p>
+                      <label><input type="checkbox" checked> Enable Course Points</label>
+
+                      <p class="help-block">
+                        Student can always see his/her course points and leaderboards are always accessable for a teacher.
+                        <br/>
+                        With public leaderboard any student can see each other's course points.
+                      </p>
+                      <label><input type="checkbox"> Public Leaderboard</label>
+                    </small>
+                  </li>
+                  <li class="list-group-item">
+                    <h5>
+                      <div class="text-center pull-right hidden-xs">
+                        <p class="trophy trophy-bronze"> Bronze Achievements </p><br/>
+                        <p class="trophy trophy-silver"> Silver Achievements </p><br/>
+                        <p class="trophy trophy-gold"> Gold Achievements </p><br/>
+                        <p class="trophy trophy-secret"> Secret Achievements </p><br/>
+                      </div>
+                      Achievements
+                    </h5>
+                    <small>
+                      <p class="help-block">
+                        Achievements help to engage students with the process of study.
+                        <br/>
+                        Unlike course points, achievements should not determine the final grade for the course.
+                      </p>
+                      <label><input type="checkbox" checked> Enable achievements</label>
+                      <p class="help-block">
+                        To manage individual achievements got to the <a href="achievements.html">list of all achievements</a>.
+                      </p>
+                    </small>
+                  </li>
+                </ul>
               </div>
 
               <div class="panel panel-danger">
