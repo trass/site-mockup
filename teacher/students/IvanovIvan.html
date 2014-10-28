@@ -96,60 +96,38 @@
                   <small>group 324</small>
                 </h3>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item list-group-item-info">
                 <a href="mailto:ivanov.ivan@example.com" class="pull-right">ivanov@example.com</a>
                 Email:
               </li>
-              <li class="list-group-item">
+            </ul>
+
+            <ul class="nav nav-pills nav-stacked" role="tablist">
+              <li><a class="text-center" href="#tabAchievements" role="tab" data-toggle="tab">
+                <span class="trophy">
+                  <span class="trophy-gold"> 1 </span>
+                  <span class="trophy-silver"> 3 </span>
+                  <span class="trophy-bronze"> 12 </span>
+                </span>
+                <span class="trophy trophy-secret"> 1 </span>
+              </a></li>
+              <li class="active"><a href="#tabPoints" role="tab" data-toggle="tab">
                 <span class="badge pull-right">27</span>
-                Course points:
-              </li>
-              <li class="list-group-item">
-                <span class="badge pull-right"># 1</span>
+                Course Points
+              </a></li>
+              <li><a href="#tabRating" role="tab" data-toggle="tab">
+                <span class="badge pull-right"># 7</span>
                 Rating
-              </li>
+              </a></li>
+              <li><a href="#tabSubmissions" role="tab" data-toggle="tab">
+                Submissions
+              </a></li>
             </ul>
 
             <div class="list-group">
-              <a href="#" class="list-group-item">
+              <a href="../messages/IvanovIvan.html" class="list-group-item">
                 <i class="fa fa-envelope fa-lg fa-fw"></i>
                 Send a message
-              </a>
-            </div>
-          </div>
-
-          <div class="panel panel-success">
-            <div class="panel-heading">
-              <h3 class="panel-title">Bonuses</h3>
-            </div>
-            <div class="list-group">
-              <a href="#" class="list-group-item">
-                <span class="label label-success pull-right">+ 1</span>
-                class activity
-              </a>
-              <a href="#" class="list-group-item">
-                <span class="label label-success pull-right">+ 5</span>
-                found teacher's mistake
-              </a>
-              <a href="#" class="list-group-item">
-                <span class="label label-success pull-right">&times; 2</span>
-                found elegant solution
-              </a>
-            </div>
-          </div>
-
-          <div class="panel panel-danger">
-            <div class="panel-heading">
-              <h3 class="panel-title">Penalties</h3>
-            </div>
-            <div class="list-group">
-              <a href="#" class="list-group-item">
-                <span class="label label-danger pull-right">– 10</span>
-                missed deadline by one week
-              </a>
-              <a href="#" class="list-group-item">
-                <span class="label label-danger pull-right">&times; 0</span>
-                cooperated on assignment
               </a>
             </div>
           </div>
@@ -158,358 +136,642 @@
 
         <div class="col-sm-8">
 
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Updates</h3>
+          <div class="tab-content">
+            <div class="tab-pane" id="tabSubmissions">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Submissions</h3>
+                </div>
+
+                <table class="table table-condensed">
+                  <tbody>
+                    <tr>
+                      <td><a href="../task.html">1. Associated list functor</a></td>
+                      <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                      <td><a href="javascript:void(0)" class="label label-default" data-toggle="collapse" data-target="#submission-details-1">submitted</a></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">&lt; minute ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td class="text-nowrap text-center">
+                        <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+                        <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="hidden-row">
+                        <div class="collapse" id="submission-details-1">
+                          <div class="panel panel-default">
+                            <div class="panel-body">
+                              No details.
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="warning">
+                      <td><a href="../task.html">1. Associated list functor</a></td>
+                      <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                      <td><a href="javascript:void(0)" class="label label-danger" data-toggle="collapse" data-target="#submission-details-2">invalid format</a></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">an hour ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td class="text-nowrap text-center">
+                        <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+                        <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="hidden-row">
+                        <div class="collapse" id="submission-details-2">
+                          <div class="panel panel-danger">
+                            <div class="panel-body">
+                              No details.
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="warning">
+                      <td><a href="../task.html">1. Associated list functor</a></td>
+                      <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                      <td><a href="javascript:void(0)" class="label label-danger" data-toggle="collapse" data-target="#submission-details-3">compilation error</a></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">2 hours ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td class="text-nowrap text-center">
+                        <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+                        <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="hidden-row">
+                        <div class="collapse" id="submission-details-3">
+                          <div class="panel panel-danger">
+                            <div class="panel-body">
+                              <pre>
+        Homework.hs:11:11:
+          Constructor ‘AssocList’ should have 1 argument, but has been given 2
+          In the pattern: AssocList k v
+          In an equation for ‘fmap’:
+              fmap f (AssocList k v) = AssocList k (fmap f v)
+          In the instance declaration for ‘Functor (AssocList k)’ </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><a href="../task.html">1. Associated list functor</a></td>
+                      <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                      <td><a href="javascript:void(0)" class="label label-danger" data-toggle="collapse" data-target="#submission-details-4">failed tests</a></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">2 days ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td class="text-nowrap text-center">
+                        <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+                        <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="hidden-row">
+                        <div class="collapse" id="submission-details-4">
+                          <div class="panel panel-danger">
+                            <div class="panel-body">
+                              No details.
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><a href="../task.html">1. Associated list functor</a></td>
+                      <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                      <td><a href="javascript:void(0)" class="label label-warning" data-toggle="collapse" data-target="#submission-details-5">passed tests</a></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">3 days ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td class="text-nowrap text-center">
+                        <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+                        <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="hidden-row">
+                        <div class="collapse" id="submission-details-5">
+                          <div class="panel panel-warning">
+                            <div class="panel-body">
+                              No details.
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><a href="../task.html">1. Associated list functor</a></td>
+                      <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                      <td><a href="javascript:void(0)" class="label label-info" data-toggle="collapse" data-target="#submission-details-6">in review</a></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">5 days ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td class="text-nowrap text-center">
+                        <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+                        <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="hidden-row">
+                        <div class="collapse" id="submission-details-6">
+                          <div class="panel panel-info">
+                            <div class="panel-body">
+                              No details.
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><a href="../task.html">1. Associated list functor</a></td>
+                      <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                      <td><a href="javascript:void(0)" class="label label-danger" data-toggle="collapse" data-target="#submission-details-7">rejected</a></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">3 weeks ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td class="text-nowrap text-center">
+                        <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+                        <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="hidden-row">
+                        <div class="collapse" id="submission-details-7">
+                          <div class="panel panel-danger">
+                            <div class="panel-body">
+                              No details.
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><a href="../task.html">1. Associated list functor</a></td>
+                      <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                      <td><a href="javascript:void(0)" class="label label-success" data-toggle="collapse" data-target="#submission-details-8">accepted</a></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">a month ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td class="text-nowrap text-center">
+                        <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+                        <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="hidden-row">
+                        <div class="collapse" id="submission-details-8">
+                          <div class="panel panel-success">
+                            <div class="panel-body">
+                              No details.
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="text-center">
+                <ul class="pagination">
+                  <li class="disabled"><a href="#">&laquo;</a></li>
+                  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li class="disabled"><a href="#">...</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                  <li><a href="#">&raquo;</a></li>
+                </ul>
+              </div>
+
+              <div class="text-center">
+                <i class="fa fa-lightbulb-o fa-lg"></i>
+                <b>Tip!</b>
+                Click on the status badge to see submission details.
+              </div>
             </div>
-              <table class="table table-condensed">
-                <tbody>
-                  <tr class="warning">
-                    <td><span class="label label-success">+10</span></td>
-                    <td>
-                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                        <small class="hidden-xs hidden-sm">a day ago</small>
-                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
-                      </span>
-                    </td>
-                    <td>
-                      <small>
-                        accepted solution for
-                        <a href="../task.html">2. Monoids</a>
-                      </small>
-                    </td>
-                    <td><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
-                    <td class="text-right">
-                      <a href="#"><i class="text-help fa fa-times"></i></a>
-                    </td>
-                  </tr>
-                  <tr class="warning">
-                    <td><span class="label label-success">+5</span></td>
-                    <td>
-                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                        <small class="hidden-xs hidden-sm">a week ago</small>
-                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
-                      </span>
-                    </td>
-                    <td>
-                      <small>
-                        found teacher's mistake
-                      </small>
-                    </td>
-                    <td><small><a href="../sections/3.html">2. Foldable</a></small></td>
-                    <td class="text-right">
-                      <a href="#"><i class="text-help fa fa-times"></i></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><span class="label label-success">+1</span></td>
-                    <td>
-                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                        <small class="hidden-xs hidden-sm">a week ago</small>
-                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
-                      </span>
-                    </td>
-                    <td>
-                      <small>
+
+            <div class="tab-pane active" id="tabPoints">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="panel panel-success">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Bonuses</h3>
+                    </div>
+                    <div class="list-group">
+                      <a href="#" class="list-group-item">
+                        <span class="label label-success pull-right">+ 1</span>
                         class activity
-                      </small>
-                    </td>
-                    <td><small><a href="../sections/3.html">2. Foldable</a></small></td>
-                    <td class="text-right">
-                      <a href="#"><i class="text-help fa fa-times"></i></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><span class="label label-success">+5</span></td>
-                    <td>
-                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                        <small class="hidden-xs hidden-sm">2 weeks ago</small>
-                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
-                      </span>
-                    </td>
-                    <td>
-                      <small>
-                        elegant solution for
-                        <a href="../task.html">3. Left fold through the right</a>
-                      </small>
-                    </td>
-                    <td><small><a href="../sections/3.html">1. Folding lists</a></small></td>
-                    <td class="text-right">
-                      <a href="#"><i class="text-help fa fa-times"></i></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><span class="label label-success">+5</span></td>
-                    <td>
-                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                        <small class="hidden-xs hidden-sm">2 weeks ago</small>
-                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
-                      </span>
-                    </td>
-                    <td>
-                      <small>
-                        accepted solution for
-                        <a href="../task.html">3. Left fold through the right</a>
-                      </small>
-                    </td>
-                    <td><small><a href="../sections/3.html">1. Folding lists</a></small></td>
-                    <td class="text-right">
-                      <a href="#"><i class="text-help fa fa-times"></i></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-          </div>
+                      </a>
+                      <a href="#" class="list-group-item">
+                        <span class="label label-success pull-right">+ 5</span>
+                        found teacher's mistake
+                      </a>
+                      <a href="#" class="list-group-item">
+                        <span class="label label-success pull-right">&times; 2</span>
+                        found elegant solution
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Submissions</h3>
+                <div class="col-md-6">
+                  <div class="panel panel-danger">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Penalties</h3>
+                    </div>
+                    <div class="list-group">
+                      <a href="#" class="list-group-item">
+                        <span class="label label-danger pull-right">– 10</span>
+                        missed deadline by one week
+                      </a>
+                      <a href="#" class="list-group-item">
+                        <span class="label label-danger pull-right">&times; 0</span>
+                        cooperated on assignment
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">History</h3>
+                </div>
+                  <table class="table table-condensed">
+                    <tbody>
+                      <tr class="warning">
+                        <td><span class="label label-success">+10</span></td>
+                        <td>
+                          <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                            <small class="hidden-xs hidden-sm">a day ago</small>
+                            <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                          </span>
+                        </td>
+                        <td>
+                          <small>
+                            accepted solution for
+                            <a href="../task.html">2. Monoids</a>
+                          </small>
+                        </td>
+                        <td><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
+                        <td class="text-right">
+                          <a href="#"><i class="text-help fa fa-times"></i></a>
+                        </td>
+                      </tr>
+                      <tr class="warning">
+                        <td><span class="label label-success">+5</span></td>
+                        <td>
+                          <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                            <small class="hidden-xs hidden-sm">a week ago</small>
+                            <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                          </span>
+                        </td>
+                        <td>
+                          <small>
+                            found teacher's mistake
+                          </small>
+                        </td>
+                        <td><small><a href="../sections/3.html">2. Foldable</a></small></td>
+                        <td class="text-right">
+                          <a href="#"><i class="text-help fa fa-times"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="label label-success">+1</span></td>
+                        <td>
+                          <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                            <small class="hidden-xs hidden-sm">a week ago</small>
+                            <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                          </span>
+                        </td>
+                        <td>
+                          <small>
+                            class activity
+                          </small>
+                        </td>
+                        <td><small><a href="../sections/3.html">2. Foldable</a></small></td>
+                        <td class="text-right">
+                          <a href="#"><i class="text-help fa fa-times"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="label label-success">+5</span></td>
+                        <td>
+                          <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                            <small class="hidden-xs hidden-sm">2 weeks ago</small>
+                            <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                          </span>
+                        </td>
+                        <td>
+                          <small>
+                            elegant solution for
+                            <a href="../task.html">3. Left fold through the right</a>
+                          </small>
+                        </td>
+                        <td><small><a href="../sections/3.html">1. Folding lists</a></small></td>
+                        <td class="text-right">
+                          <a href="#"><i class="text-help fa fa-times"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="label label-success">+5</span></td>
+                        <td>
+                          <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                            <small class="hidden-xs hidden-sm">2 weeks ago</small>
+                            <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
+                          </span>
+                        </td>
+                        <td>
+                          <small>
+                            accepted solution for
+                            <a href="../task.html">3. Left fold through the right</a>
+                          </small>
+                        </td>
+                        <td><small><a href="../sections/3.html">1. Folding lists</a></small></td>
+                        <td class="text-right">
+                          <a href="#"><i class="text-help fa fa-times"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
             </div>
 
-            <table class="table table-condensed">
-              <tbody>
-                <tr>
-                  <td><a href="../task.html">1. Associated list functor</a></td>
-                  <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
-                  <td><a href="javascript:void(0)" class="label label-default" data-toggle="collapse" data-target="#submission-details-1">submitted</a></td>
-                  <td>
-                    <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                      <small class="hidden-xs">&lt; minute ago</small>
-                      <i class="visible-xs-inline fa fa-clock-o"></i>
+            <div class="tab-pane" id="tabRating">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Ratings</h3>
+                </div>
+                <table class="table table-hover table-condensed">
+                  <thead>
+                    <tr>
+                      <th class="text-right">#</th>
+                      <th>Student</th>
+                      <th class="hidden-xs text-right">Classwork</th>
+                      <th class="hidden-xs text-right">Homework</th>
+                      <th class="hidden-xs text-right">Project</th>
+                      <th class="text-right warning">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-right">1</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    <tr>
+                      <td class="text-right">2</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">3</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">4</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">5</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">6</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr class="info">
+                      <td class="text-right">7</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Ivanov Ivan</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                      <td class="text-right">8</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">9</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">10</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">11</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">12</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">13</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">14</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">15</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">16</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">17</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">18</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">19</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">20</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right">21</td>
+                      <td><a href="students/IvanovIvan.html"><i class="fa fa-user"></i> Petrov Petr</a></td>
+                      <td class="hidden-xs text-right">10</td>
+                      <td class="hidden-xs text-right">20</td>
+                      <td class="hidden-xs text-right">30</td>
+                      <td class="text-right warning"><span class="label label-dark-void">160</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tabAchievements">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Achievements</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <p class="col-sm-6"><span class="trophy trophy-gold"> Triumph of Justice </span></p>
+                  </div>
+
+                  <div class="row">
+                    <p class="col-sm-6"><span class="trophy trophy-silver"> Productive Insomnia </span></p>
+                    <p class="col-sm-6"><span class="trophy trophy-silver"> Strike </span> <span class="text-help"> &times; 2</span></p>
+                  </div>
+
+                  <div class="row">
+                    <p class="col-sm-6"><span class="trophy trophy-bronze"> <tt>Hello world!</tt> </span></p>
+                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Acceptable </span></p>
+                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Bugfix </span></p>
+                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Upstairs </span></p>
+                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Volunteer </span> <span class="text-help"> &times; 2</span></p> 
+                    <p class="col-sm-6"><span class="trophy trophy-bronze"> The 15 min Rule </span></p>
+                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Lucky 3 </span></p>
+                    <p class="col-sm-6"><span class="trophy trophy-bronze"> In the Bull's Eye </span> <span class="text-help"> &times; 3</span></p>
+                    <p class="col-sm-6"><span class="trophy trophy-bronze"> Double Hit </span></p>
+                  </div>
+
+                  <div class="row">
+                    <p class="col-sm-6"><span class="trophy trophy-secret"> Jeweller </span></p>
+                  </div>
+                </div>
+
+                <div class="panel-footer">
+                  <div class="input-group">
+                    <input class="form-control" id="awardAchievement" placeholder="Type achievement name" />
+                    <span class="input-group-btn">
+                      <a href="#" class="btn btn-default" type="button"><i class="fa fa-trophy fa-fw"></i> Award</a>
                     </span>
-                  </td>
-                  <td class="text-nowrap text-center">
-                    <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
-                    <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="hidden-row">
-                    <div class="collapse" id="submission-details-1">
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          No details.
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr class="warning">
-                  <td><a href="../task.html">1. Associated list functor</a></td>
-                  <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
-                  <td><a href="javascript:void(0)" class="label label-danger" data-toggle="collapse" data-target="#submission-details-2">invalid format</a></td>
-                  <td>
-                    <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                      <small class="hidden-xs">an hour ago</small>
-                      <i class="visible-xs-inline fa fa-clock-o"></i>
-                    </span>
-                  </td>
-                  <td class="text-nowrap text-center">
-                    <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
-                    <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="hidden-row">
-                    <div class="collapse" id="submission-details-2">
-                      <div class="panel panel-danger">
-                        <div class="panel-body">
-                          No details.
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr class="warning">
-                  <td><a href="../task.html">1. Associated list functor</a></td>
-                  <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
-                  <td><a href="javascript:void(0)" class="label label-danger" data-toggle="collapse" data-target="#submission-details-3">compilation error</a></td>
-                  <td>
-                    <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                      <small class="hidden-xs">2 hours ago</small>
-                      <i class="visible-xs-inline fa fa-clock-o"></i>
-                    </span>
-                  </td>
-                  <td class="text-nowrap text-center">
-                    <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
-                    <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="hidden-row">
-                    <div class="collapse" id="submission-details-3">
-                      <div class="panel panel-danger">
-                        <div class="panel-body">
-                          <pre>
-    Homework.hs:11:11:
-      Constructor ‘AssocList’ should have 1 argument, but has been given 2
-      In the pattern: AssocList k v
-      In an equation for ‘fmap’:
-          fmap f (AssocList k v) = AssocList k (fmap f v)
-      In the instance declaration for ‘Functor (AssocList k)’ </pre>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><a href="../task.html">1. Associated list functor</a></td>
-                  <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
-                  <td><a href="javascript:void(0)" class="label label-danger" data-toggle="collapse" data-target="#submission-details-4">failed tests</a></td>
-                  <td>
-                    <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                      <small class="hidden-xs">2 days ago</small>
-                      <i class="visible-xs-inline fa fa-clock-o"></i>
-                    </span>
-                  </td>
-                  <td class="text-nowrap text-center">
-                    <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
-                    <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="hidden-row">
-                    <div class="collapse" id="submission-details-4">
-                      <div class="panel panel-danger">
-                        <div class="panel-body">
-                          No details.
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><a href="../task.html">1. Associated list functor</a></td>
-                  <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
-                  <td><a href="javascript:void(0)" class="label label-warning" data-toggle="collapse" data-target="#submission-details-5">passed tests</a></td>
-                  <td>
-                    <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                      <small class="hidden-xs">3 days ago</small>
-                      <i class="visible-xs-inline fa fa-clock-o"></i>
-                    </span>
-                  </td>
-                  <td class="text-nowrap text-center">
-                    <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
-                    <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="hidden-row">
-                    <div class="collapse" id="submission-details-5">
-                      <div class="panel panel-warning">
-                        <div class="panel-body">
-                          No details.
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><a href="../task.html">1. Associated list functor</a></td>
-                  <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
-                  <td><a href="javascript:void(0)" class="label label-info" data-toggle="collapse" data-target="#submission-details-6">in review</a></td>
-                  <td>
-                    <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                      <small class="hidden-xs">5 days ago</small>
-                      <i class="visible-xs-inline fa fa-clock-o"></i>
-                    </span>
-                  </td>
-                  <td class="text-nowrap text-center">
-                    <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
-                    <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="hidden-row">
-                    <div class="collapse" id="submission-details-6">
-                      <div class="panel panel-info">
-                        <div class="panel-body">
-                          No details.
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><a href="../task.html">1. Associated list functor</a></td>
-                  <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
-                  <td><a href="javascript:void(0)" class="label label-danger" data-toggle="collapse" data-target="#submission-details-7">rejected</a></td>
-                  <td>
-                    <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                      <small class="hidden-xs">3 weeks ago</small>
-                      <i class="visible-xs-inline fa fa-clock-o"></i>
-                    </span>
-                  </td>
-                  <td class="text-nowrap text-center">
-                    <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
-                    <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="hidden-row">
-                    <div class="collapse" id="submission-details-7">
-                      <div class="panel panel-danger">
-                        <div class="panel-body">
-                          No details.
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><a href="../task.html">1. Associated list functor</a></td>
-                  <td class="hidden-xs"><small><a href="../sections/3.html">3. Functors &amp; Monoids</a></small></td>
-                  <td><a href="javascript:void(0)" class="label label-success" data-toggle="collapse" data-target="#submission-details-8">accepted</a></td>
-                  <td>
-                    <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                      <small class="hidden-xs">a month ago</small>
-                      <i class="visible-xs-inline fa fa-clock-o"></i>
-                    </span>
-                  </td>
-                  <td class="text-nowrap text-center">
-                    <a href="../submissions/1.html" title="View"><i class="fa fa-eye fa-lg fa-fw"></i></a>
-                    <a href="#" title="Download"><i class="fa fa-download fa-lg fa-fw"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="hidden-row">
-                    <div class="collapse" id="submission-details-8">
-                      <div class="panel panel-success">
-                        <div class="panel-body">
-                          No details.
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="text-center">
-            <ul class="pagination">
-              <li class="disabled"><a href="#">&laquo;</a></li>
-              <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li class="disabled"><a href="#">...</a></li>
-              <li><a href="#">9</a></li>
-              <li><a href="#">10</a></li>
-              <li><a href="#">&raquo;</a></li>
-            </ul>
-          </div>
-
-          <div class="text-center">
-            <i class="fa fa-lightbulb-o fa-lg"></i>
-            <b>Tip!</b>
-            Click on the status badge to see submission details.
+                  </div>
+                  <p class="help-block">
+                  For reference see the <a href="../achievements.html">list of all achievements</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
