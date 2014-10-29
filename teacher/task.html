@@ -143,14 +143,33 @@
                 Points
               </li>
               <li class="list-group-item">
-                <a class="datepicker label label-primary pull-right" href="javascript:$('#start-date').datepicker('show');" name="start" id="start-date"> </a>
+                <span class="label label-default pull-right">1 week</span>
+                Duration
+              </li>
+              <li class="list-group-item">
+                <span class="label label-primary pull-right">12 Mar 2014</span>
                 Start date
               </li>
               <li class="list-group-item">
-                <a class="datepicker label label-primary pull-right" href="javascript:$('#end-date').datepicker('show');" name="end" id="end-date"> </a>
+                <span class="label label-primary pull-right">19 Mar 2014</span>
                 End date
               </li>
             </ul>
+          </div>
+
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Manage</h3>
+            </div>
+
+            <div class="list-group">
+              <a href="#" class="list-group-item" title="Make assignment inaccessable for students.">
+                <i class="fa fa-lock fa-lg fa-fw text-danger"></i> Lock
+              </a>
+              <a href="#" class="list-group-item" title="Make deadline happen now.">
+                <i class="fa fa-minus-circle fa-lg fa-fw text-danger"></i> Stop
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -186,6 +205,8 @@
       $(function () {
           $("table *").tooltip();
           $(".nav a").tooltip();
+          $(".list-group a").tooltip();
+          $(".btn").tooltip({ container: 'body' });
       });
 
       $('.datepicker').datepicker({ format: "dd M yyyy" });
