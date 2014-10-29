@@ -21,9 +21,6 @@
     <!-- Custom Fonts -->
     <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Bootstrap DatePicker CSS -->
-    <link href="../css/datepicker.css" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -113,20 +110,44 @@
 
             <ul class="nav nav-pills nav-stacked">
               <li> <a href="sections/3.html">
-                  <span class="label label-success pull-right">10</span>
-                  1. Folding lists
+                <span class="label label-success pull-right">10</span>
+                1. Folding lists
               </a> </li>
               <li> <a href="sections/3.html">
-                  <span class="label label-success pull-right">10</span>
-                  2. Foldable
+                <span class="label label-success pull-right">10</span>
+                2. Foldable
               </a> </li>
               <li> <a href="sections/3.html">
-                  <span class="label label-success pull-right">17</span>
-                  3. Functors &amp; Monoids
+                <span class="label label-success pull-right">17</span>
+                3. Functors &amp; Monoids
+              </a> </li>
+              <li> <a href="sections/test.html">
+                <span class="pull-right">
+                  <i class="fa fa-lock fa-lg fa-fw" title="Locked" data-placement="left"></i>
+                  <span class="label label-default">40</span>
+                </span>
+                Test
+              </a> </li>
+              <li> <a href="sections/3.html">
+                <span class="pull-right">
+                  <i class="fa fa-lock fa-lg fa-fw" title="Locked" data-placement="left"></i>
+                  <span class="label label-default">20</span>
+                </span>
+                4. Applicative Functors
+              </a> </li>
+              <li> <a href="sections/3.html">
+                <span class="pull-right">
+                  <i class="fa fa-lock fa-lg fa-fw" title="Locked" data-placement="left"></i>
+                  <span class="label label-default">25</span>
+                </span>
+                5. Applicative Functors 2
               </a> </li>
               <li> <a href="sections/project.html">
-                  <i class="fa fa-lock fa-lg fa-fw pull-right"></i>
-                  Project
+                <span class="pull-right">
+                  <i class="fa fa-lock fa-lg fa-fw" title="Locked" data-placement="left"></i>
+                  <span class="label label-default">80</span>
+                </span>
+                Project
               </a> </li>
             </ul>
           </div>
@@ -175,9 +196,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap DatePicker JavaScript -->
-    <script src="../js/bootstrap-datepicker.js"></script>
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 
@@ -186,23 +204,9 @@
       $(function () {
           $("table *").tooltip();
           $(".nav a").tooltip();
+          $(".nav-pills i").tooltip();
           $(".btn").tooltip({ container: 'body' });
       });
-
-      $('.datepicker').datepicker({ format: "dd M yyyy" });
-
-      $('#start-date-1').datepicker('update', '26-02-2014');
-      $('#end-date-1').datepicker('update', '05-03-2014');
-
-      $('#start-date-2').datepicker('update', '05-03-2014');
-      $('#end-date-2').datepicker('update', '12-03-2014');
-
-      $('#start-date-3').datepicker('update', '12-03-2014');
-      $('#end-date-3').datepicker('update', '19-03-2014');
-
-      $('#start-date-4').datepicker('update', '26-03-2014');
-      $('#end-date-4').datepicker('update', '19-04-2014');
-
     </script>
 
     <!-- Google Analytics -->
