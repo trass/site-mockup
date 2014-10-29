@@ -94,61 +94,50 @@
       </ol>
 
       <div class="row">
-        <div class="col-md-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Section structure</h3>
+        <div class="col-sm-8">
+          <h1>Homework</h1>
+          <p class="lead">This homework is about <code>Functor</code>s and <code>Monoid</code>s.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h1>
+            <div class="btn-group">
+              <a href="javascript:void(0)" class="btn btn-default active" title="Preview" data-placement="bottom"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+              <a href="../course-graphs.html" class="btn btn-default" title="Graphs" data-placement="bottom"><i class="fa fa-bar-chart fa-lg fa-fw"></i></a>
+              <a href="../course-settings.html" class="btn btn-default" title="Course Settings" data-placement="bottom"><i class="fa fa-gear fa-lg fa-fw"></i></a>
             </div>
-            <table class="table table-condensed">
-              <tbody>
-                <tr>
-                  <td><a href="../task.html"><i class="fa fa-file-code-o fa-fw"></i> 1. Associated list functor</a></td>
-                  <td>
-                    <small>
-                      <a class="datepicker text-nowrap" href="javascript:$('#start-date-1').datepicker('show');" name="start" id="start-date-1"> </a>
-                      —
-                      <a class="datepicker text-nowrap" href="javascript:$('#end-date-1').datepicker('show');" name="end" id="end-date-1"> </a>
-                    </small>
-                  </td>
-                  <td>
-                    <a href="javascript:void(0)"><i class="fa fa-toggle-on fa-lg fa-fw text-success"></i></a>
-                  </td>
-                  <td class="text-right"> <span class="label label-success">5</span> </td>
-                </tr>
-                <tr>
-                  <td><a href="../task.html"><i class="fa fa-file-code-o fa-fw"></i> 2. Monoids</a></td>
-                  <td>
-                    <small>
-                      <a class="datepicker text-nowrap" href="javascript:$('#start-date-2').datepicker('show');" name="start" id="start-date-2"> </a>
-                      —
-                      <a class="datepicker text-nowrap" href="javascript:$('#end-date-2').datepicker('show');" name="end" id="end-date-2"> </a>
-                    </small>
-                  </td>
-                  <td>
-                    <a href="javascript:void(0)"><i class="fa fa-toggle-on fa-lg fa-fw text-success"></i></a>
-                  </td>
-                  <td class="text-right"> <span class="label label-success">5</span> </td>
-                </tr>
-                <tr>
-                  <td><a href="../task.html"><i class="fa fa-file-code-o fa-fw"></i> 3. Find for any Foldable</a></td>
-                  <td>
-                    <small>
-                      <a class="datepicker text-nowrap" href="javascript:$('#start-date-3').datepicker('show');" name="start" id="start-date-3"> </a>
-                      —
-                      <a class="datepicker text-nowrap" href="javascript:$('#end-date-3').datepicker('show');" name="end" id="end-date-3"> </a>
-                    </small>
-                  </td>
-                  <td>
-                    <a href="javascript:void(0)"><i class="fa fa-toggle-on fa-lg fa-fw text-success"></i></a>
-                  </td>
-                  <td class="text-right"> <span class="label label-success">7</span> </td>
-                </tr>
-              </tbody>
-            </table>
+          </h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4">
+
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+              <h3 class="panel-title">Problems</h3>
+            </div>
+
+            <ul class="nav nav-pills nav-stacked">
+              <li> <a href="../task.html">
+                  <span class="label label-default pull-right">0 / 5</span>
+                  1. Associated list functor
+              </a> </li>
+              <li> <a href="../task.html">
+                  <span class="label label-success pull-right">5 / 5</span>
+                  2. Monoids
+              </a> </li>
+              <li> <a href="../task.html">
+                  <span class="label label-default pull-right">0 / 7</span>
+                  3. Find for any Foldable
+              </a> </li>
+            </ul>
           </div>
+
         </div>
 
-        <div class="col-md-6">
+        <div class="col-sm-6 col-md-7 col-lg-8">
+
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Overview</h3>
@@ -157,18 +146,18 @@
               Blah-blah-blah.
             </div>
           </div>
+
         </div>
       </div>
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Theory &amp; Materials</h3>
+          <h3 class="panel-title">Theory &amp; materials</h3>
         </div>
         <div class="panel-body">
           Blah-blah-blah.
         </div>
       </div>
-
     </div><!-- /.container -->
 
     <div class="container text-center">
@@ -200,6 +189,7 @@
       $(function () {
           $("table *").tooltip();
           $(".nav a").tooltip();
+          $(".btn").tooltip({ container: 'body' });
       });
 
       $('.datepicker').datepicker({ format: "dd M yyyy" });
