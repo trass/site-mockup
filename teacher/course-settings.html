@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Haskell - Course Settings</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/trass.css" rel="stylesheet">
+
+    <!-- Social buttons CSS -->
+    <link href="../css/plugins/social-buttons.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap DatePicker CSS -->
+    <link href="../css/datepicker.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body role="document">
+
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="course.html">Haskell programming</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="course.html" title="Course" data-placement="bottom">
+              <i class="fa fa-book fa-lg fa-fw"></i>
+              <span class="visible-xs-inline">Course</span>
+            </a></li>
+            <li><a href="submissions.html" title="Submissions" data-placement="bottom">
+              <i class="fa fa-inbox fa-lg fa-fw"></i>
+              <span class="label label-danger">2</span>
+              <span class="visible-xs-inline">Submissions<span>
+            </a></li>
+            <li><a href="students.html" title="Students" data-placement="bottom">
+              <i class="fa fa-users fa-lg fa-fw"></i>
+              <span class="visible-xs-inline">Students</span>
+            </a></li>
+            <li><a href="messages.html" title="Messages" data-placement="bottom">
+              <i class="fa fa-envelope fa-lg fa-fw"></i>
+              <span class="label label-danger">1</span>
+              <span class="visible-xs-inline">Messages</span>
+            </a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><p class="navbar-text">
+              <i class="fa fa-graduation-cap fa-lg fa-fw"></i> Mr. Teacher
+            </p></li>
+            <li><a href="settings.html" title="Settings" data-placement="bottom">
+              <i class="fa fa-gear fa-lg fa-fw"></i>
+              <span class="visible-xs-inline">Settings</span>
+            </a></li>
+            <li><a href="../login.html" title="Sign out" data-placement="bottom">
+              <i class="fa fa-sign-out fa-lg fa-fw"></i>
+              <span class="visible-xs-inline">Sign Out</span>
+            </a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h1>Haskell programming</h1>
+          <p class="lead">This course is about Haskell programming language.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h1>
+            <div class="btn-group">
+              <a href="course.html" class="btn btn-default" title="Preview" data-placement="bottom"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+              <a href="course-graphs.html" class="btn btn-default" title="Graphs" data-placement="bottom"><i class="fa fa-bar-chart fa-lg fa-fw"></i></a>
+              <a href="course-settings.html" class="btn btn-default active" title="Course Settings" data-placement="bottom"><i class="fa fa-gear fa-lg fa-fw"></i></a>
+            </div>
+          </h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <i class="fa fa-gear fa-lg fa-fw"></i>
+                Course Settings
+              </h3>
+            </div>
+
+            <ul class="nav nav-pills nav-stacked" role="tablist" id="settingsPills">
+              <li class="active"><a href="#tabGeneral" role="tab" data-toggle="tab"><i class="fa fa-book fa-lg fa-fw"></i> General</a></li>
+              <li><a href="#tabStaff" role="tab" data-toggle="tab"><i class="fa fa-users fa-lg fa-fw"></i> Staff</a></li>
+              <li><a href="#tabGamification" role="tab" data-toggle="tab"><i class="fa fa-gamepad fa-lg fa-fw"></i> Gamification</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-8 col-md-9">
+          <div class="tab-content">
+
+            <div class="tab-pane active" id="tabGeneral">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Course repository</h3>
+                </div>
+
+                <div class="panel-body">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="courseHaskellIdent">Course identifier</label>
+                      <div class="input-group">
+                        <input class="form-control" id="courseHaskellIdent" value="haskell-2015" />
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button">Rename</button>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="courseHaskellRepoURL">Course repository URL</label>
+                      <input class="form-control" id="courseHaskellRepoURL" value="https://fizruk@bitbucket.org/fizruk/haskell-2015.git" />
+                    </div>
+                    <a href="#" class="btn btn-success">Update course</a>
+                  </form>
+                </div>
+              </div>
+
+              <div class="panel panel-danger">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Danger Zone</h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <h5>
+                      <a href="#" class="btn btn-danger pull-right"><i class="fa fa-exchange fa-lg fa-fw"></i> Transfer</a>
+                      Transfer ownership
+                    </h5>
+                    <small class="help-block">
+                      Transfer this course to another user.
+                    </small>
+                  </li>
+                  <li class="list-group-item">
+                    <h5>
+                      <a href="#" class="btn btn-danger pull-right"><i class="fa fa-trash fa-lg fa-fw"></i> Delete</a>
+                      Delete course
+                    </h5>
+                    <small class="help-block">
+                      Once you delete a course, there is no going back. Please be certain.
+                    </small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tabStaff">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <span class="badge pull-right">1</span>
+                    Teachers
+                  </h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="label label-void pull-right">Owner</span>
+                    <a href="../teacher.html"><i class="fa fa-graduation-cap fa-lg fa-fw"></i> Mr. Teacher</a>
+                  </li>
+                </ul>
+
+                <div class="panel-footer">
+                  <small class="help-block">
+                    Teachers have access to course settings and graphs as well as student leaderboards, submissions and messages.
+                  </small>
+                  <div class="input-group">
+                    <input class="form-control" id="inviteAssistant" placeholder="Type teacher name or email" />
+                    <span class="input-group-btn">
+                      <a href="#" class="btn btn-default" type="button"><i class="fa fa-envelope fa-fw"></i> Invite Teacher</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <span class="badge pull-right">1</span>
+                    Assistants
+                  </h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#" class="btn btn-xs btn-danger pull-right"><i class="fa fa-trash fa-fw"></i> Remove</a>
+                    <a href="../teacher.html"><i class="fa fa-graduation-cap fa-lg fa-fw"></i> John Smith</a>
+                  </li>
+                </ul>
+
+                <div class="panel-footer">
+                  <small class="help-block">
+                    Assistants have access only to student leaderboards and submissions.
+                  </small>
+                  <div class="input-group">
+                    <input class="form-control" id="inviteAssistant" placeholder="Type assistant name or email" />
+                    <span class="input-group-btn">
+                      <a href="#" class="btn btn-default" type="button"><i class="fa fa-envelope fa-fw"></i> Invite Assistant</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tabGamification">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Gamification</h3>
+                </div>
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <h5>
+                      <div class="navbar navbar-inverse pull-right hidden-xs">
+                        <ul class="nav navbar-nav">
+                          <li><p class="navbar-text">
+                            <span class="label label-success">+ 25</span>
+                          </p></li>
+                        </ul>
+                      </div>
+                      Course Points
+                    </h5>
+                    <small>
+                      <p class="help-block">
+                        Course points indicate student progress in a single number.
+                        Points are typically rewarded for direct course mastering such as task completion.
+                        The final grade for the course is commonly based on course points.
+                      </p>
+                      <label><input type="checkbox" checked> Enable Course Points</label>
+
+                      <p class="help-block">
+                        Student can always see his/her course points and leaderboards are always accessable for a teacher.
+                        <br/>
+                        With public leaderboard any student can see each other's course points.
+                      </p>
+                      <label><input type="checkbox"> Public Leaderboard</label>
+                    </small>
+                  </li>
+
+                  <li class="list-group-item">
+                    <h5>
+                      <div class="text-center pull-right hidden-xs">
+                        <p class="trophy trophy-bronze"> Bronze Achievements </p><br/>
+                        <p class="trophy trophy-silver"> Silver Achievements </p><br/>
+                        <p class="trophy trophy-gold"> Gold Achievements </p><br/>
+                        <p class="trophy trophy-secret"> Secret Achievements </p><br/>
+                      </div>
+                      Achievements
+                    </h5>
+                    <small>
+                      <p class="help-block">
+                        Achievements help to engage students with the process of study.
+                        <br/>
+                        Unlike course points, achievements should not determine the final grade for the course.
+                      </p>
+                      <label><input type="checkbox" checked> Enable achievements</label>
+                      <p class="help-block">
+                        To manage individual achievements got to the <a href="achievements.html">list of all achievements</a>.
+                      </p>
+                    </small>
+                  </li>
+                </ul>
+
+                <div class="panel-footer">
+                  <h5>What is Gamification?</h5>
+                  <small>
+                    <p>
+                      Gamification is the use of game thinking and game mechanics in non-game contexts to engage users in solving problems.
+                      Gamification techniques strive to leverage people's natural desires for socializing, learning, mastery, competition, achievement, status, self-expression, altruism, or closure.
+                      <br/>
+                      <a href="#">Learn more</a>
+                    </p>
+                  </small>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+
+    </div><!-- /.container -->
+
+    <div class="container text-center">
+      <hr />
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav nav-pills nav-justified">
+                    <li><p>© 2014 Nickolay Kudasov.</p></li>
+                    <li><a href="../about.html">About TRASS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="../js/jquery-1.11.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap DatePicker JavaScript -->
+    <script src="../js/bootstrap-datepicker.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script type="text/javascript">
+      /* Initialize tooltips */
+      $(function () {
+          $("table *").tooltip();
+          $(".nav a").tooltip();
+          $(".btn").tooltip({ container: 'body' });
+      });
+
+      $('.datepicker').datepicker({ format: "dd M yyyy" });
+
+      $('#start-date-1').datepicker('update', '26-02-2014');
+      $('#end-date-1').datepicker('update', '05-03-2014');
+
+      $('#start-date-2').datepicker('update', '05-03-2014');
+      $('#end-date-2').datepicker('update', '12-03-2014');
+
+      $('#start-date-3').datepicker('update', '12-03-2014');
+      $('#end-date-3').datepicker('update', '19-03-2014');
+
+      $('#start-date-4').datepicker('update', '26-03-2014');
+      $('#end-date-4').datepicker('update', '19-04-2014');
+
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56096186-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
