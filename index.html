@@ -97,24 +97,36 @@
               <h3 class="panel-title">Course sections</h3>
             </div>
 
-            <ul class="nav nav-pills nav-stacked">
-              <li> <a href="sections/3.html">
-                  <span class="label label-success pull-right">10 / 10</span>
-                  1. Folding lists
-              </a> </li>
-              <li> <a href="sections/3.html">
-                  <span class="label label-warning pull-right">6 / 10</span>
-                  2. Foldable
-              </a> </li>
-              <li> <a href="sections/3.html">
-                  <span class="label label-warning pull-right">5 / 17</span>
-                  3. Functors &amp; Monoids
-              </a> </li>
-              <li> <a href="sections/project.html">
-                  <i class="fa fa-lock fa-lg fa-fw pull-right"></i>
-                  Project
-              </a> </li>
-            </ul>
+            <div class="list-group">
+              <a href="sections/3.html" class="list-group-item">
+                <span class="label label-success pull-right">10 / 10</span>
+                1. Folding lists
+              </a>
+              <a href="sections/3.html" class="list-group-item">
+                <span class="label label-warning pull-right">5 / 10</span>
+                2. Foldable
+              </a>
+              <a href="sections/3.html" class="list-group-item">
+                <span class="label label-warning pull-right">5 / 17</span>
+                3. Functors &amp; Monoids
+              </a>
+              <a href="sections/test.html" class="list-group-item">
+                <i class="fa fa-lock fa-lg fa-fw pull-right" title="Locked" data-placement="left"></i>
+                Test
+              </a>
+              <a href="sections/3.html" class="list-group-item">
+                <i class="fa fa-lock fa-lg fa-fw pull-right" title="Locked" data-placement="left"></i>
+                4. Applicative Functors
+              </a>
+              <a href="sections/3.html" class="list-group-item">
+                <i class="fa fa-lock fa-lg fa-fw pull-right" title="Locked" data-placement="left"></i>
+                5. Applicative Functors 2
+              </a>
+              <a href="sections/project.html" class="list-group-item">
+                <span class="label label-warning pull-right">0 / 80</span>
+                Project
+              </a>
+            </div>
           </div>
 
         </div>
@@ -169,6 +181,7 @@
       /* Initialize tooltips */
       $(function () {
           $(".nav a").tooltip();
+          $(".fa-lock").tooltip();
       });
     </script>
 
