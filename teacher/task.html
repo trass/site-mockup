@@ -160,10 +160,10 @@
             </div>
 
             <div class="list-group">
-              <a href="#" class="list-group-item" title="Make assignment inaccessable for students.">
+              <a href="#" class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Make assignment inaccessable for students.">
                 <i class="fa fa-lock fa-lg fa-fw text-danger"></i> Lock
               </a>
-              <a href="#" class="list-group-item" title="Make deadline happen now.">
+              <a href="#" class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Make deadline happen now.">
                 <i class="fa fa-minus-circle fa-lg fa-fw text-danger"></i> Stop
               </a>
             </div>
@@ -199,8 +199,8 @@
       $(function () {
           $("table *").tooltip();
           $(".nav a").tooltip();
-          $(".list-group a").tooltip();
           $(".btn").tooltip({ container: 'body' });
+          $("a.list-group-item").popover({ container: 'body' });
       });
     </script>
 
