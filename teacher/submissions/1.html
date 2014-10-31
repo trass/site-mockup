@@ -94,7 +94,7 @@
                     <small class="hidden-xs hidden-sm">a day ago</small>
                     <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
                   </span>
-                <span class="label label-warning">passed tests</span>
+                <span class="label label-success">accepted</span>
               </span>
               <span class="panel-title">
                 1. Associated list functor
@@ -110,6 +110,7 @@
             <ul class="nav nav-tabs" role="tablist">
               <li class="active"><a href="#tabSolution" role="tab" data-toggle="tab"><i class="fa fa-file-code-o fa-fw"></i> Solution</a></li>
               <li><a href="#tabLog" role="tab" data-toggle="tab"><i class="fa fa-file-text-o fa-fw"></i> Log</a></li>
+              <li><a href="#tabHistory" role="tab" data-toggle="tab"><i class="fa fa-clock-o fa-fw"></i> History</a></li>
             </ul>
 
             <div class="tab-content">
@@ -118,7 +119,7 @@
 instance Functor (Assoc k) where
     fmap f (Assoc xs) = Assoc (map (\(k, v) -&gt; (k, f v)) xs)</pre>
                 <a href="#" class="btn btn-default pull-right"><i class="fa fa-download fa-lg fa-fw"></i> Download</a>
-                <a href="#" class="btn btn-info"><i class="fa fa-eye fa-lg fa-fw"></i> Start Review</a>
+                <a href="#" class="btn btn-info disabled" ><i class="fa fa-eye fa-lg fa-fw"></i> Start Review</a>
               </div>
 
               <div id="tabLog" class="tab-pane panel-body">
@@ -131,6 +132,99 @@ Finished in 0.3943 seconds
 2 examples, 0 failures</pre>
                 <a href="#" class="btn btn-default pull-right"><i class="fa fa-download fa-lg fa-fw"></i> Download</a>
               </div>
+
+              <div id="tabHistory" class="tab-pane">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td class="text-help text-nowrap"><i class="fa fa-gears fa-fw"></i> System</td>
+                      <td><span class="label label-danger">– 5</span></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">a day ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td>
+                        <small>missed deadline by one week</small>
+                      </td>
+                      <td>
+                        <span class="text-help">—</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><a href="../../teacher.html"><i class="fa fa-graduation-cap fa-fw"></i> Mr. Teacher</a></td>
+                      <td><span class="label label-success">+ 10</span></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">a day ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td>
+                        <small>accepted as elegant solution</small>
+                      </td>
+                      <td>
+                        <span class="text-help">
+                          <i class="fa fa-mobile fa-fw" title="from phone"></i>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><a href="../../teacher.html"><i class="fa fa-graduation-cap fa-fw"></i> Mr. Teacher</a></td>
+                      <td><span class="label label-info">in review</span></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">a day ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td>
+                        <small>—</small>
+                      </td>
+                      <td>
+                        <span class="text-help">
+                          <i class="fa fa-mobile fa-fw" title="from phone"></i>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr class="text-nowrap">
+                      <td class="text-help"><i class="fa fa-gears fa-fw"></i> System</td>
+                      <td><span class="label label-warning">passed tests</span></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">a week ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td>
+                        <small>—</small>
+                      </td>
+                      <td>
+                        <span class="text-help">—</span>
+                      </td>
+                    </tr>
+                    <tr class="text-nowrap">
+                      <td><a href="../students/IvanovIvan.html"><i class="fa fa-user fa-fw"></i> Ivanov Ivan</a></td>
+                      <td><span class="label label-default">submitted</span></td>
+                      <td>
+                        <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
+                          <small class="hidden-xs">a week ago</small>
+                          <i class="visible-xs-inline fa fa-clock-o"></i>
+                        </span>
+                      </td>
+                      <td>
+                        <small>—</small>
+                      </td>
+                      <td>
+                        <span class="text-help">
+                          <i class="fa fa-desktop fa-fw" title="from PC"></i>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
@@ -138,49 +232,6 @@ Finished in 0.3943 seconds
             <li class="previous disabled"><a href="../submissions/1.html">&larr; Previous <span class="hidden-xs">Submission</span></a></li>
             <li class="next"><a href="../submissions/1.html">Next <span class="hidden-xs">Submission</span> &rarr;</a></li>
           </ul>
-
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                <span class="label label-success pull-right">5</span>
-                Points
-              </h3>
-            </div>
-              <table class="table table-condensed">
-                <tbody>
-                  <tr>
-                    <td class="text-center"><span class="label label-danger">– 5</span></td>
-                    <td>
-                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                        <small class="hidden-xs hidden-sm">a day ago</small>
-                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
-                      </span>
-                    </td>
-                    <td>
-                      <small>missed deadline by one week</small>
-                    </td>
-                    <td class="text-right">
-                      <a href="#"><i class="text-help fa fa-times"></i></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-center"><span class="label label-success">+ 10</span></td>
-                    <td>
-                      <span class="text-help" title="21 Oct 2014 19:42:34 GMT+4">
-                        <small class="hidden-xs hidden-sm">a day ago</small>
-                        <i class="visible-xs-inline visible-sm-inline fa fa-clock-o"></i>
-                      </span>
-                    </td>
-                    <td>
-                      <small>accepted as elegant solution</small>
-                    </td>
-                    <td class="text-right">
-                      <a href="#"><i class="text-help fa fa-times"></i></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-          </div>
 
           <div class="row">
             <div class="col-md-6">
@@ -378,6 +429,7 @@ Finished in 0.3943 seconds
       /* Initialize tooltips */
       $(function () {
           $(".text-help").tooltip();
+          $(".text-help *").tooltip();
           $(".nav a").tooltip();
       });
     </script>
