@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Haskell - Test</title>
+    <title>Haskell - Graphs</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,9 @@
 
     <!-- Custom Fonts -->
     <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Morris.js CSS -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -84,91 +87,119 @@
 
     <div class="container">
 
-      <ol class="breadcrumb">
-        <li><a href="../course.html">Haskell programming</a></li>
-        <li class="active">Test</li>
-      </ol>
-
       <div class="row">
         <div class="col-sm-8">
-          <h1>Test</h1>
-          <p class="lead">This test is about <code>Foldable</code>s, <code>Functor</code>s and <code>Monoid</code>s.</p>
+          <h1>Haskell programming</h1>
+          <p class="lead">This course is about Haskell programming language.</p>
         </div>
         <div class="col-sm-4 text-center">
           <h1>
             <div class="btn-group">
-              <a href="javascript:void(0)" class="btn btn-default active" title="Preview" data-placement="bottom"><i class="fa fa-eye fa-lg fa-fw"></i></a>
-              <a href="../graphs/submissions.html" class="btn btn-default" title="Graphs" data-placement="bottom"><i class="fa fa-bar-chart fa-lg fa-fw"></i></a>
+              <a href="../course.html" class="btn btn-default" title="Preview" data-placement="bottom"><i class="fa fa-eye fa-lg fa-fw"></i></a>
+              <a href="javascript:void(0)" class="btn btn-default active" title="Graphs" data-placement="bottom"><i class="fa fa-bar-chart fa-lg fa-fw"></i></a>
               <a href="../course-settings.html" class="btn btn-default" title="Course Settings" data-placement="bottom"><i class="fa fa-gear fa-lg fa-fw"></i></a>
             </div>
           </h1>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-6 col-md-5 col-lg-4">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="submissions.html">Submissions</a></li>
+        <li><a href="problems.html">Problems</a></li>
+      </ul>
 
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Test Info</h3>
-            </div>
+      &nbsp;
 
-            <ul class="list-group">
-              <li class="list-group-item">
-                <span class="label label-success pull-right">40</span>
-                Points
-              </li>
-              <li class="list-group-item">
-                <span class="label label-default pull-right">1 h 40 m</span>
-                Duration
-              </li>
-              <li class="list-group-item">
-                <a href="#" class="btn btn-success btn-block">Start Test at <span id="currentTime"></span></a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading">
-              <h3 class="panel-title">Problems</h3>
-            </div>
-
-            <div class="list-group">
-              <a href="../task.html" class="list-group-item">
-                  <span class="label label-success pull-right">5</span>
-                  1. Problem 1
-              </a>
-              <a href="../task.html" class="list-group-item">
-                  <span class="label label-success pull-right">10</span>
-                  2. Problem 2
-              </a>
-              <a href="../task.html" class="list-group-item">
-                  <span class="label label-success pull-right">10</span>
-                  3. Problem 3
-              </a>
-              <a href="../task.html" class="list-group-item">
-                  <span class="label label-success pull-right">15</span>
-                  4. Problem 4
-              </a>
-            </div>
-          </div>
-
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Submissions</h3>
         </div>
-
-        <div class="col-sm-6 col-md-7 col-lg-8">
-
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Overview</h3>
-            </div>
-            <div class="panel-body">
-              Blah-blah-blah.
-            </div>
-          </div>
-
-        </div>
+        <div id="chartSubmissions" style="height: 250px;"></div>
       </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Statuses</h3>
+            </div>
+            <table class="table">
+              <thead class="panel-heading">
+                <tr>
+                  <th>Status</th>
+                  <th class="text-center">Submissions</th>
+                  <th class="text-center">Students</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="label label-success">accepted</span></td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">10</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-danger">rejected</span></td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">2</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-danger">failed tests</span></td>
+                  <td class="text-center">44</td>
+                  <td class="text-center">13</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-danger">compile error</span></td>
+                  <td class="text-center">27</td>
+                  <td class="text-center">9</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-danger">invalid</span></td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">7</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-default">errored</span></td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Active Problems</h3>
+            </div>
+            <table class="table">
+              <thead class="panel-heading">
+                <tr>
+                  <th>Problem</th>
+                  <th class="text-center">Submissions</th>
+                  <th class="text-center">Students</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><small><a href="../task.html">2. Monoids</a></small></td>
+                  <td class="text-center">35</td>
+                  <td class="text-center">13</td>
+                </tr>
+                <tr>
+                  <td><small><a href="../task.html">1. Associated list functor</a></small></td>
+                  <td class="text-center">21</td>
+                  <td class="text-center">9</td>
+                </tr>
+                <tr>
+                  <td><small><a href="../task.html">3. Find for any Foldable</a></small></td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
     </div><!-- /.container -->
 
@@ -187,6 +218,9 @@
     <!-- jQuery Version 1.11.0 -->
     <script src="../../js/jquery-1.11.1.min.js"></script>
 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="../../js/bootstrap.min.js"></script>
 
@@ -194,30 +228,37 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
     <script type="text/javascript">
-      function updateClock() {
-        var currentTime = new Date();
-        var currentHours = currentTime.getHours();
-        var currentMinutes = currentTime.getMinutes();
-        var currentSeconds = currentTime.getSeconds();
-
-        // Pad the minutes and seconds with leading zeros, if required
-        currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-        currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
-
-        // Compose the string for display
-        var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds;
-
-        $("#currentTime").html(currentTimeString);
-      }
-
       /* Initialize tooltips */
       $(function () {
           $("table *").tooltip();
           $(".nav a").tooltip();
           $(".btn").tooltip({ container: 'body' });
+      });
 
-          updateClock();
-          setInterval('updateClock()', 1000);
+      new Morris.Line({
+        element: 'chartSubmissions',
+        data: [
+          { day: '2014-03-05', s: 33,  u: 9  },
+          { day: '2014-03-06', s: 25,  u: 10 },
+          { day: '2014-03-07', s: 11,  u: 5  },
+          { day: '2014-03-08', s: 10,  u: 2  },
+          { day: '2014-03-09', s: 8,   u: 3  },
+          { day: '2014-03-10', s: 8,   u: 1  },
+          { day: '2014-03-11', s: 25,  u: 7  },
+          { day: '2014-03-12', s: 43,  u: 13 },
+          { day: '2014-03-13', s: 38,  u: 8  },
+          { day: '2014-03-14', s: 21,  u: 4  },
+          { day: '2014-03-15', s: 16,  u: 6  },
+          { day: '2014-03-16', s: 5,   u: 2  },
+          { day: '2014-03-17', s: 1,   u: 1  },
+          { day: '2014-03-18', s: 18,  u: 7  },
+          { day: '2014-03-19', s: 36,  u: 11 }
+        ],
+        xkey: 'day',
+        ykeys: ['s', 'u'],
+        labels: ['Submissions', 'Students'],
+        smooth: false,
+        hideHover: 'auto'
       });
     </script>
 
